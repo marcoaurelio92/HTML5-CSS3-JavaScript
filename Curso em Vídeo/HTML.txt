@@ -1,0 +1,187 @@
+Capítulo 04 Aula 02:
+
+<!DOCTYPE html>          -> Indica que esse documento vai ser em html 5.
+<html lang="pt-br">         -> Todo o site vai ser marcado dentro dessa tag. O 1º parâmetro indica que vai ser um site no idioma desejado.
+    <head>          -> Parte do "cabeça da página".
+        <meta charset="UTF-8">          -> Indica que vai aceitar todo o tipo de acentuação.
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">          -> Indica que a página HTML vai abrir em todo área disponível no navegador.
+        <title>Meu primeiro exercício</title>          -> Nome do HTML.
+    </head>
+    <body>          -> Corpo do site.
+	<h1>          -> Primeiro título
+	<hr>          -> Linha horizontal
+	<p>          -> Parágrafo
+    </body>
+</html>       
+
+Capítulo 05 Aula 01:
+
+<br>          -> Quebra de linha. 
+
+Capítulo 05 Aula 02:
+
+<!---->          -> Fazer comentário.
+
+Capítulo 06 Aula 04:
+
+<img src="logo-html-200.png" alt="Logo html5">          -> A tag img serve pra adicionar imagens ao site. src="origem.formato" alt="texto alternativo, vai dizer o que é a imagem".
+
+<img src="imagens/logo-css-200.png" alt="logo css3">          -> Nesse caso a imagem está sendo carregada de uma pasta onda está o arquivo index.html. Se por um a caso tiver que voltar uma pasta antes do nome da pasta coloque ../.
+
+<img src="https://logospng.org/download/javascript/logo-javascript-icon-256.png" alt="logo javascript">          -> Nesse caso a origem é outro servidor, vindo o url de algum outro site. na parte de origem cole o link da imagem em questão.
+
+Capítulo 06 Aula 05:
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">          -> Tag para adicionar o favicon. No carderno tem sites para conseguir ico e para converter ico. Em href="aqui vem o local de origem e o nome do arquivo.ico".
+    <title>Teste de Favicon</title>
+</head>
+
+Capítulo 07 Aula 01:
+
+<p>lorem</p>          -> Gerador de parágrafo (blá blá blá).
+
+Capítulo 08 Aula 01:
+
+<body>
+    <h1>Exemplos:</h1>
+    <p>Eu moro na <address>Rua dos Capixabas, 229 - Botafogo - RJ</address></p>          -> A tag <address> da sentido semântico ao valor.
+</body>
+
+Capítulo 08 Aula 02/03:
+
+<strong>          -> Tag para dar destaque a algum texto. Negrito (semântico).
+
+<em>          -> Tag para dar ênfase a algum texto. Itálico (semântico).
+
+<mark>          -> Esta tag serve como marca texto. Para trocar a cor só usar o css. <style="background-color: blue;">
+
+<small>          -> Esta tag serve pra deixar um texto pequeno com um sentido semântico.
+
+<del>          -> Esta tag serve para indicar que um texto deve ser lido mas não considerado. No caso é muito usando em livro de leis, quando uma "lei" existiu mas passou de uma data específica e não está mais válida.
+
+<ins>          -> Esta tag serve para dar uma ênfase e indicar que ele foi adicionado depois.
+
+<sup>          -> Esta tag serve para indicar um texto subrescrito. xª.
+
+<sub>          -> Esta tag serve para indicar um texto subscrito. h_.
+
+Capítulo 08 Aula 04:
+
+<code>          -> Esta tag indica que o texto é um código de computador, como efeito visual vai deixar as letras no modo mono-espaçadas.
+
+<pre>          -> Esta tag é muito útil se utilizada com a tag code. Esta tag deixa pre configurado tudo que estiver em seu valor, respeitando quebra de linha, espaços e margens.
+
+<q>          -> Esta tag serve para indicar uma citação simples de uma forma semântica.
+
+<blockquote cite="https://play.google.com/store/books/details/Lucas_Mazza_HTML5_e_CSS3?id=XXCCCwAAQBAJ">          -> Esta tag serve pra fazer uma citação longa e completa com valor semântico. No site vai aparecer como um texto destacado com uma margem por igual. O parâmetro cite="endereço da referência" serve pra colocar da onde vê essa referência, nesse caso pode-se colocar até o endereço para compra se for um produto.
+
+<abbr title="HyperText Markup Language">          -> Esta tag serve para indicar que um texto é uma abreviação. aplicando esta tag o editor já indica esse parâmetro tittle="teste", dessa forma no site o texto vai ganhar um certo destaque e quando se passar o mouse por cima vai aparecer a palavra sem abreviação.
+
+<bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo>          -> Esta tag pode inverter o sentido de leitura de um texto. Ao usar a tag o editor já sugere o parâmetro dir="rtl ou ltr", que vai definir o sentido da leitura. 
+
+Capítulo 09 Aula 01:
+
+<ol type="1 A a I i" start="4">          -> Esta tag cria lista ordenada. O parâmetro type serve pra configurar a lista. O parâmetro star por onde começar. Lembrando que pode abrir uma lista dentro de outra lista.
+
+<ul type="disc circle square">          -> Esta tag cria uma lista não ordenada. O parâmetro type serve pra configurar a lista. Lembrando que pode abrir uma lista dentro de outra lista.
+
+<li>          -> Esta tag serve para indicar um item de lista ordenada ou não ordenada.
+       
+<dl>          -> Esta tag cria uma lista de definição.
+
+<dt>          -> Esta tag serve para criar um termo dentro da lista de definição.
+
+<dd>          -> Esta tag serve para criar uma descrição de um termo na lista de definição.
+
+Capítulo 10 Aula 01:
+
+<a href="https://www.google.com.br" hreflang="pt-br" rel="external" target="_blank">aqui</a>          -> Esta tag cria um link externo. O parâmetro href="endereço desejado" geralmente já vem de sugestão do editor, serve pra colocar o endereço do link externo.O parâmetro hreflang="idioma da página" serve para indicar o idioma do link se for interno. O parâmetro rel="tipo de link"(next indica que o link é para a próxima parte do documento atual /prev indica que o link é para a parte anterior do documento atual /author indica que é um link para o site do autor do artigo atual /external indica que é um link para outro site que não faz parte do site atual /nofollow indica que é um link para um site não endossado, como um link pago) serve para indicar que tipo de link estamos usando. O parâmetro target="onde vamos abrir o link"(_blank vai abrir o link em uma nova janela em branco /_self vai abrir o link na janela ou frame atual (padrão) /_top vai desfazer todos os frames e abrir o destino no navegador completo /_parent similar ao uso do _top em uma referência à janela mãe /nome-do-frame caso esteja usando frames, indicar o nome da janela a abrir) serve para indicar como o navegador vai abrir o link.
+
+<a href="arquivos/meulivro.pdf" download="meulivro.pdf" type="application/pdf"> Baixe aqui o meu PDF do meu livro.</a>          -> A tag nesse caso aqui está configurada para um download. O parâmetro href="endereço do link" tem a funçao de indicar o endereço do link. O parâmetro download="nome do arquivo" é uma função semântica vai indicar o nome do arquivo. O parâmetro type="tipo de arquivo para download" vai indicar o tipo de arquivo que está em download, valor semântico. aqui vâo outros types:
+application/zip text/html text/css text/javascript video/mp4 video/H264 video/JPEG audio/aac audio/mpeg font/ttf image/jpeg image/png. lista de media types: https://www.iana.org/assignments/media-types/media-types.xhtml.
+
+Capítulo 11 Aula 02:
+
+ <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>          -> Esta tag parece uma img mas ela permite que você crie várias fontes.
+        <source media="(max-width: 750px)" srcset="_imagens/foto-p.png" type="image/png">            ->Esta tag vai carregar uma foto menor que a anterior, caso o navegador do visitante seja menor que 750px. sempre colocar 50px a mais que o tamanho da img.
+        <source media="(max-width: 1050px)" srcset="_imagens/foto-m.png" type="image/png">            ->Esta tag vai carregar uma foto menor que a anterior, caso o navegador do visitante seja menor que 1050px. O parâmetro srcset="endereço da img a ser carregada" serve pra localizar a img a ser carregada. O parâmetro type="image/png" serve para identificar o tipo de arquivo a ser carregado. foi usado a tag <source media=type>  
+        <img src="_imagens/foto-g.png" alt="imagem flexível">          -> De modo mais efetivo, comece sempre pela foto G. Em ordem decrescente vá colocando as outras fontes menores em cima desta tag.
+    </picture>
+
+Capítulo 11 Aula 03:
+
+<audio preload="metadata" autoplay controls loop>          -> Esta tag serve para adicionar áudios ao seu site. O primeiro parâmetro seria src, porém como devemos pensar em todos os navegadores. Desta forma colocaremos o source entre audio para poder colocar todos os formatos possíveis. O parâmetro preload="auto(carrega todos os formatos assim que atualizar o site.) metadata(carrega somente as informações quando atualizar o site) none(não carrega nada quando atualizar o site)" serve para o navegador carregar ou não os áudios quando o visitante abrir a página. O parâmetro autoplay serve para tocar automaticamente assim que abrir a página, não funciona em todos os navegadores. O parâmetro controls serve para aparecer os controles do áudio no site para que o visitante tenha interatividade. O parâmetro loop serve para tocar novamente quando acabar o áudio.
+        <source src="_midia/guanacast-33.mp3" type="audio/mpeg">          -> Este é o primeiro formato carregado ao site. Lembrando que o navegador vai carregar o primeiro, se não conseguir vai carregar o segundo e assim sucessivamente. O parâmetro type="tipo de arquivo" serve para indicar ao navegador o tipe de arquivo de forma semântica.
+        <source src="_midia/guanacast-33.oggvorbis.ogg" type="audio/ogg">
+        <p>Desculpe, seu navegador não está pronto para reproduzir esta podcast. Baixe o podcast <a href="_midia/guanacast-33.mp3" download="guanacast-33" type="audio/mpeg">aqui</a>.</p>          -> Este parágrafo somente irá aparecer se o navegador do visitante não conseguir carregar nenhum formato. Como opção devemos disponibilizar o arquivo para download.
+    </audio>
+
+Capítulo 11 Aula 05:
+
+<video width="550px" controls poster="_imagem/limoes-capa.png">          -> Esta tag serve para adicionar vídeos ao site. Geralmente o primeiro parâmetro é o src, porém como devemos pensar na compatibilidade do vídeo com os navegadores dos visitantes, colocamos dessa forma pra conseguir carregar o máximo de formatos. O parâmetro width="tamanho" serve pra configurar o tamanho da janela que vai aparecer vídeo no site. O parâmetro poster="endereço do poster" serve pra colocar um poster na janela do vídeo.
+    <source src="_midia/meu-video.webmsd.webm" type="video/webm">
+    <source src="_midia/meu-video.oggtheora.ogv" type="video/ogg">
+    <source src="_midia/meu-video.mp4" type="video/mp4">
+    <p>Desculpe, seu navegador não está pronto para reproduzir este vídeo. Baixe o vídeo <a href="_midia/meu-video.mp4" download="meu-video" type="video/mp4">aqui</a>.</p>
+  </video>
+
+Capítulo 11 Aula 06:
+
+<h2>Hospedados em outros servidores: YouTube</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/21mDekTZwsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>          -> Esta tag foi copiada do YouTube. Sempre que quiser um video do YouTube, escolha o vídeo e vá em compartilhar, escolha incorporar, ajuste as configurações finais e copie todo o código fonte e cole no editor.
+
+Capítulo 12 Aula 01:
+
+<style>          -> Esta tag serve para usar css.
+
+Capítulo 12 Aula 03:
+
+<link rel="stylesheet" href="style.css">          -> Link para fazer ligação de uma página css na página de html. O parâmetro rel="tipoDeArquivo" indica de forma semântica o tipo de arquivo do link. O parâmetro href="oEndereçoDaPágina" indica o endereço da página de css.
+
+Capítulo 13 Aula 07:
+
+<main>          -> Container de conteúdo principal do site.
+
+Capítulo 15 Aula 02:
+
+id serve para personalizar 1 elemento.
+class serve para personalizar múltiplos elementos.
+span serve pra fazer um container em um texto e configurar usando id ou class.
+
+Capítulo 15 Aula 03:
+
+<div>          -> Container. 
+
+Capítulo 16 Aula 04:
+
+<header>          -> Cria áreas relativas a cabeçalhos. Pode ser o cabeçalho principal de um site ou até 
+mesmo o cabeçalho de uma seção ou artigo. Normalmente inclui títulos <h1> - <h6>
+e subtítulos. Podem também conter menus de navegação.
+
+<nav>          -> Define uma área que possui os links de navegação pela 
+estrutura de páginas que vão compor o website. Um 
+<nav> pode estar dentro de um <header>
+
+<section>          -> Cria seções para sua página. Ela pode conter o conteúdo diretamente no seu corpo ou 
+dividir os conteúdos em artigos com conteúdos específicos. Segundo a documentação 
+oficial da W3C, “uma seção é um agrupamento temático de conteúdos, tipicamente 
+com um cabeçalho”
+
+<aside>          -> Delimita um conteúdo periférico e complementar ao conteúdo principal de um artigo 
+ou seção. Normalmente um conteúdo <aside> está posicionado ao lado de um 
+determinado texto ou até mesmo no meio dele, exatamente como fizemos no bloco de 
+texto apresentado anteriormente, falando sobre “MÚLTIPLOS NÍVEIS”
+
+<article>          -> Um artigo é um elemento que vai conter um conteúdo que pode ser lido de forma 
+independente e dizem respeito a um mesmo assunto. Podemos usar um <article> 
+para delimitar um post de blog ou fórum, uma notícia, etc.
+
+<footer>          -> Cria um rodapé para o site inteiro, seção ou artigo. É um conteúdo que não faz parte 
+diretamente do conteúdo nem é um conteúdo periférico (o que caracterizaria um 
+<aside>), mas possui informações sobre autoria do conteúdo, links adicionais, mapa 
+do site, documentos relacionados.

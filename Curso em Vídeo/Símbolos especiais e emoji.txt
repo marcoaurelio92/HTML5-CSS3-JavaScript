@@ -1,0 +1,23 @@
+&lt;          -> < Menor que.
+&gt;          -> > Maior que.
+&nbsp;          -> Espaço em branco.
+&reg;          -> ® Marca registrada.
+&copy;          -> © Copyright.
+&trade;          -> ™ Trade Mark.
+&euro;          -> € Euro.
+&pound;          -> £ Libra (pound).
+&yen;          -> ¥ Yen.
+&cent;          -> ¢ Cent.
+&empty;          -> ∅ Vazio.
+&sum;          -> ∑ Soma.
+&Delta;          -> Δ Delta.
+&larr;          -> ← Seta esquerda.
+&uarr;          -> ↑ Seta acima.
+&rarr;          -> → Seta direita.
+&darr;          -> ↓ Seta baixo.
+https://www.w3schools.com/charsets/ref_utf_symbols.asp
+&#x          -> Todos os símbolos de emoji começam com essa marcação.
+&#x1f596;          -> 🖖 Vulcan Salute.
+&#x1f913;          -> 🤓 Nerd Face.
+https://emojipedia.org
+ 

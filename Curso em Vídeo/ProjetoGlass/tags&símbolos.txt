@@ -1,0 +1,316 @@
+tags:
+
+<h1>até<h6> Hierarquia de títulos
+
+<p> parágrafo
+
+<br/> quebra de linha
+
+<wbr/> quebra de palavra
+
+&nbsp; espaço no texto
+
+&shy; quebra de palavra c/ hífen
+
+<b> negrito
+
+<i> itálico
+
+<em> ênfase na palavra
+
+<del> vai indicar que foi um texto que foi deletado
+
+<sup> texto subescrito
+
+<sub> texto subscrito
+
+<code> considera todo conteúdo do valor como código
+
+<pre> considera tudo pre formatado
+
+<img src="nomedaimagem.jpeg"/> adiciona uma imagem
+
+<img src="nomedaimagem.jpeg" width="200"/> configura a largura da imagem
+
+<figure> dar um valor semântico
+
+dentro de figure <figcaption> dar uma legenda a uma imagem
+
+<nav> cria um container de navegação
+
+<ol> lista ordenada
+
+<ul> lista não ordenada
+
+<li> item da lista
+
+<ol type="1"> ordenada numeral
+
+<ol type="a"> ordenada alfabética
+
+<ol type="i"> ordenada número romano
+
+<ol type="1" star="3"> muda o ínicio da lista(só entende valor numeral independente da lista ordenada)
+
+<ul type="square"> lista não ordenada com pequenos quadrados
+
+<ul type="circle"> lista não ordenada com pequenos círculos com fundo branco
+
+<ul type="disc"> lista não ordenada com pequenos círculos com fundo preto
+
+<a href="página"> adicionar link de uma página ao site 
+
+<a href="página" target="_blank"> cria uma nova aba para exibir a página
+
+embaixo do @charset "UTF-8"; @font-face{ font-family: 'nomequevcescolherparafont'; src: url(../_fonts/bubblegum-sans-regular.otf); adiciona uma font salva em seu pc
+
+www.google.com/fonts fonte de fonts sem precisar ter no pc
+
+<section> cria um corpo no site
+
+<aside> cria um corpo lateral no site
+
+<footer> cria um rodape pro site
+
+<table> cria uma tabela
+
+<caption> dentro da tag <table> marca o título da tabela
+ 
+<tr> marca o espaço que vai ser a linha
+
+<td> marca a coluna na tabela
+
+<td rowspan="2"> a td selecionada vai ocupar 2 linhas
+
+<td colspan="2"> a td selecionada vai ocupar 2 colunas
+
+<iframe src="google-glass.html" name="janela"></iframe> carrega um conteúdo de outra página, no seu arquivo de html
+
+iframe#frame-spec{overflow: hidden;} não permite rolar a barra de um <iframe>
+
+iframe#frame-spec::-webkit-scrollbar{display: none;} não exibir a barra de rolagem de um <iframe>
+
+<map name="meumapa"></map> tudo que estiver entre <map> será um mapa de imagens, da pra fazer um efeito de clicar em uma área específica de uma imagem e aparecer um conteúdo da própria página ou de outra
+
+<img src="_imagens/glass-esquema-marcado.jpg"/ usemap="#meumapa"> linkar a imagem no tag <map>
+
+<area shape="poly" coords="182,219,265,207,267,243,185,255" href="google-glass.html#tela" target="janela"/> todo mapa tem que ter uma area e a area você pode definir com polímero. Dando as coordenadas de todas as "pontas" em sentindo horário começando pela esquerda
+
+<area shape="circle" coords="159,244,11" href="google-glass.html#camera" target="janela"/> todo mapa tem que ter uma area e a area você pode definir com círculos. Dando as coordenadas do centro do círculo e do raio (metade da largura)
+
+<area shape="rect" coords="27,144,83,250" href="google-glass.html#sensores" target="janela"/> todo mapa tem que ter uma area e a area você pode definir com retângulos. Dando as coordenadas do canto esquerdo superior e do canto direito inferior
+
+<div id="tv-radio"> 
+    <audio id="musica" controls="controls"> tag semântica para introduzir audio no site parâmetro controls="controls" para aparecer o player com os controles
+        <source src="_media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg"/> tag pra adicionar um audio, tem que estar dentro de <audio>
+        <source src="_media/2009-lovers-carvings-bibio.oggvorbis.ogg" type="audio/ogg"/> sempre o ideal é colocar os 3 formatos disponíveis
+        <source src="_media/07 Lovers' Carvings.m4a" type="audio/x-aac"/> sempre o ideal é colocar os 3 formatos disponíveis
+        Não compatível com o seu navegador. Tente atualiza-lo. Mensagem caso o navegador do visitante esteja muito desatualizado
+ 
+<video id="filme" controls="controls" poster="_imagens/video-mini03.jpg"> tag semântica para introduzir um vídeo no site parâmetro controls="controls" para aparecer o player com os controles parâmetro poster para colocar um "poster" ao player do vídeo
+        <source src="_media/getting-started.mp4" type="video/mp4"/> tag pra adicionar um vídeo, tem que estar dentro de <video>
+        <source src="_media/getting-started.webmsd.webm" type="video/webm"/> sempre o ideal é colocar os 3 formatos disponíveis
+        <source src="_media/getting-started.oggtheora.ogv" type="video/ogg"/> sempre o ideal é colocar os 3 formatos disponíveis
+        Não compatível com o seu navegador. Tente atualiza-lo. Mensagem caso o navegador do visitante esteja muito desatualizado
+    </video>
+</div>
+
+<form> configurando formulários
+    <fieldset id="usuario">
+<legend>Identificação do Usuário</legend>
+    <p><label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome completo"/></p>
+    <p><label for="cSenha">Senha:</label> <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 dígitos"/></p>
+    <p><label for="cMail">E-mail:</label> <input type="email" name="tMail" id="cMail" size="20" maxlength="30" placeholder="seuemail@provedor.com"/></p>
+    <fieldset id="sexo">
+        <legend>Sexo</legend>
+        <input type="radio" name="tSexo" id="cMasc" checked/> <label for="cMasc">Masculino</label></br>
+        <input type="radio" name="tSexo" id="cFem"/> <label for="cFem">Feminino</label>
+    </fieldset>
+    <p><label for="cMasc">Data de Nascimento:</label> <input type="date" name="tNasc" id="cNasc"/></p>
+    <p><label for="cNum">Número:</label> <input type="number" name="tNum" id="cNum" min="0" max="9999"/>
+    </fieldset>
+
+<form method="post" id="fContato" action="mailto:marcohillebrand92@gmail.com"> tags para form method é o metódo de envio das opções get manda para o "pacote" post nesse caso está enviando para um email selecionado
+ 
+<p><label for="cEst">Estado:</label> <select name="tEst" id="cEst">
+        <optgroup label="Região Sudeste">
+        <option value="RJ" selected>Rio de Janeiro</option>
+        <option value="SP">São Paulo</option>
+        <option value="MG">Minas Gerais</option>
+</select></p>
+
+<p><label for="cCid">Cidade:</label> <input type="text" name="tCid" id="cCid" size="20" maxlength="30" placeholder="Sua Cidade" list="cidades"/></p>
+    <datalist id="cidades">
+        <option value="Rio de Janeiro"></option>
+        <option value="Nova Iguaçu"></option>
+        <option value="Niterói"></option>
+        <option value="Belford Roxo"></option>
+    </datalist>
+
+ <fieldset id="mensagem">
+<legend>Mensagem do Usuário</legend>
+    <p><label for="cUrg">Grau de Urgência:</label> Mín<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"/>Máx</p>
+</fieldset>
+
+<fieldset id="mensagem">
+<legend>Mensagem do Usuário</legend>
+<textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagem."></textarea></p>
+</fieldset>
+
+<fieldset id="pedido">
+    <legend>Quero um Google Glass</legend>
+    <p><input type="checkbox" name="tPed" id="cPed" checked/> <label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label></p>
+    <p><label for="cCor">Cor:</label> <input type="color" name="tCor" id="cCor" value="#888888"/></p>
+    <p><label for="cQtd">Quantidade:</label> <input type="number" name="tQtd" id="cQtd" min="0" max="10" value="0"/></p>
+    <p><label for="cTot">Preço Total: R$</label> <input type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly/></p>
+    </fieldset>
+
+<input type="image" src="_imagens/botao-enviar.png"/>
+<input type="submit" value="Enviar"/>
+
+
+css:
+<span> tag utilizada para formatar pequenos trechos de texto
+
+<class="nome da class"> forma de estilizar uma classe em comum usando css
+
+<id="nome da id"> forma de estilizar uma id única em css
+
+style:"text-decoration: underline;" sublinhar
+
+style:"text-decoration: line-through;" riscar palavra
+
+style:"text-decoration: none;" sem decoração
+
+style:"font-weight: ;" níveis de negrito
+
+style:"text-align: ;" alinhamento de texto
+
+style:"text-align: justify;" organiza o texto com alinhamento
+
+style:"text-align: justify; text-indent:50px" marco de parágrafo
+
+style:"background-color: ;" cor do fundo
+style:"color: ;" cor do texto
+style:"color:# ;" cor hex
+style:"color:rgb(35, 137, 197);" cor rgb
+style:"color:rgba(35, 137, 197, 0.1);" cor rgb com opacidade (0 - 1)
+style:"background-image: url("fundo.jpg");" imagem como background
+style:"background-color: hsl(165,81%,93%);" cor por matriz, saturação e luminosidade
+style:"background-color: hsla(165,81%,93%,0.5);" cor por hsl com opacidade
+style:"border:8px solid red;" adiciona e configura uma borda no texto ou imagem
+figure.nomedaclass img{ width: 100%;} configura a largura de uma imagem ou de uma class
+figure.nomedaclass img{ height: 100%;} configura a altura de uma imagem ou de uma class
+style:"box-shadow: 1px(deslocamento horizontal) 1px(deslocamento vertical) 4px(espaçamento da sombra) black; adiciona e configura uma sombra
+figure.nomedaclass figcaption{ position: absolute;} a legenda da imagem vai ficar em um posição livre pelo site
+figure.nomedaclass figcaption{ top:0px;} indica a localidade dentro do box onde vai ficar a legenda no "box"
+figure.nomedaclass figcaption{ box-sizing: border_box;} cria um limite de box dentro de uma borda
+figure.nomedaclass{ position: relative;} a imagem vai ter uma posição relativa dentro do container, fica preso a posição onde se encontra o container no html
+figure.nomedaclass figcaption{ opacity: 0;} indica o grau de opacidade de uma legenda dentro de uma figure de uma class indicada
+figure.nomedaclass: hover figcaption{ opacity: 1;} mostra a legenda na opacidade indicada quando passar o mouse por cima
+figure.nomedaclass figcaption{ transition: opacity 1s;} configura o tempo que leva pra mostrar a transição de opacidade de uma legenda dentro de uma figure de uma class indicada quando passa o moude por cima
+nav#nome da id ul{ list-style: none; some com os marcadores da lista
+nav#nome da id ul{ text-transform: uppercase; deixa todo o texto da lista grande 
+nav#nome da id li{ display: inline-block; deixa o "bloco" em linha. pode ser só os itens da lista ou a lista completa.
+nav#nome da id{ display: block; transforma todo o container de navegação em um block
+nav#nome da id ul{ top: 10px;} vai indicar onde vai se encontrar toda a lista não ordenada no topo do seu site ou dentro do container dependendo do display
+nav#nome da id ul{ left: 300px;} a que distância vai ficar da esquerda o container de lista não ordenada
+nav#nome da id h1{ display: none;} o título do container de navegação não vai ficar exposto no site
+nav#nome da id li:hover{ background-color: #606060;} toda vez que passar o mouse por cima de um item de lista o fundo vai trocar pela cor indicada
+nav#nome da id li{ transition: background-color 1s;} configura o tempo que leva pra trocar de cor o fundo do item de lista toda vez que passar o mouse por cima
+header#cabecalho{ border-bottom: 1px #606060 solid;} coloca 1 linha de borda na parte específica (expressura, cor da linha e tipo de linha)
+section#nomedaid{ float: left; } faz a section "flotoar" pela esquerda do site(lembrando que o section tem que estar com display: block;)
+aside#nomedaid{ float: right;} faz o aside "flotoar" pela direita do site(lembrando que a css float só funciona com a display: block;)
+footer#nomedaid{ clear: both;} limpa toda a divisão feita pelo section e o aside, pelos os dois lados
+table#nomedaid { border-spacing: 0px; } configura o espaçamento de borda dentro da tabela
+ul#album-fotos li{
+    float: left; fazendo as imagens ficar ou itens de lista ficar lado a lado
+    width: 200px; padronizando o tamanho das imagens fazendo parecer uma janela
+    height: 200px; padronizando o tamanho das imagens fazendo parecer uma janela
+    margin: 10px; padronizando a margem das imagens fazendo parecer uma janela
+    border: 5px solid #ffffff; 
+    background-color: #ffffff;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+    -webkit-transition: all .4s ease-in;} o tempo e o tipo de transição para o zoom
+ul#album-fotos li:hover{
+    -webkit-transform: scale(1.5);} css que da o zoom
+ul#album-fotos li#foto01{
+    background: url('../_imagens/galeria-01.jpg') no-repeat;
+    background-position: 50% 50%; faz aparecer o centro da foto na janela criada
+    background-size: 400px 400px; faz a foto dentro da janela ficar maior ajudando a esconder o texto
+    background-color: #ffffff;}
+ul#album-fotos li#foto01:hover{
+    background-position: 0px 0px; efeito que faz aparecer toda a imagem no zoom
+    background-size: 200px 200px;} diminui a foto para a imagem no zoom não ficar com um tamanho grosseiro
+fazendo o efeito de quando passar o mouse por cima de uma foto, fazer um efeito de zoom
+ 
+javaScript:
+<script> todas as funções do JavaScript precisam ser escritas entre o <script> ou seus parâmetros
+document.write("seu texto"); escreve dentro do documento
+alert("seu texto"); mensagem de alerta no site
+function nomeDaSuaFuncao() { alert ("Lâmpada Acendeu")} da uma função em algum objeto que você especificar ex: <img src="_imagens/lampada-apagada.jpg" onmousemove="nomeDaSuaFuncao()"/> toda vez que passar o mouse na imagem ou objeto vai fazer a função indicada
+function nomeDaSuaFuncao() { alert ("Lâmpada Acendeu")} da uma função em algum objeto que você especificar ex: <img src="_imagens/lampada-apagada.jpg" onclick="nomeDaSuaFuncao()/> toda vez que clicar na imagem ou no objeto vai fazer a função indicada
+funtion nomeDaSuaFuncao() { alert ("Lâmpada Acendeu")} da uma função  em algum objeto que você especificar ex: <img src="_imagens/lampada-apagada.jpg" 
+trocar imagens:
+<scrip> function acendelampada() {
+document.getElementById("luz").src="_imagens/lampada-acesa.jpg";
+<img src="_imagens/lampada-apagada.jpg" id="luz" onmousemove="acendeLampada()"/> toda vez que eu passar o mouse por cima da imagem a função vai trocar de imagem, nesse caso dando um efeito de acender a lâmpada
+onmouseout="nomeDaFuncao"/> efeito acontece quando o mouse sai do objeto ou imagem
+<script>
+        var quebrada= false;
+        function mudaLampada(tipo){
+            if(!quebrada){
+                document.getElementById("luz").src="_imagens/"+ tipo +".jpg";
+                if(tipo =='lampada-quebrada'){
+                    quebrada=true;}}}
+</script>
+<img src="_imagens/lampada-apagada.jpg" id="luz" onmousemove="mudaLampada('lampada-acesa')" onmouseout="mudaLampada('lampada-apagada')" onclick="mudaLampada('lampada-quebrada')"/> esta é a forma mais simplificada sem deixar a função grande. no caso faz a lampada acender quando passar o mouse por cima, apagar quando tirar o mouse e quebrar quando clicar na imagem da lampada. Após quebrada a função não volta a se repetir permanecendo quebrada
+<script language="javascript" src="_javascript/funcoes.js"></script> forma de linkar o arquivo com as funções do JavaScript ao .html
+<script> aqui é um exemplo de como fazer aparecer o total de preço da quantidade de um produto 
+            function calc_total(){
+                var qtd = parseInt(document.getElementById('cQtd').value)
+                tot = qtd * 1500;
+                document.getElementById('cTot').value = tot;}
+        </script>
+<form method="post" id="fContato" action="mailto:marcohillebrand92@gmail.com" oninput="calc_total();">
+<p><label for="cQtd">Quantidade:</label> <input type="number" name="tQtd" id="cQtd" min="0" max="10" value="0"/></p>
+    <p><label for="cTot">Preço Total: R$</label> <input type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly/></p>
+
+símbolos:
+&lt; <
+&gt; >
+&le; <ou=
+&ge; >ou=
+
+&pound; libra
+&yen; yene
+&euro; euro
+
+&copy; copyright
+&reg; marca registrada
+&trade; trademarket
+
+&permil; permil
+&sum; soma
+&infin; infinito
+&times; multiplicação
+&plusmm; +ou-
+&oplus; + dentro de 1 cículo
+&radic; raiz quadrada
+&ne; não é igual =
+
+&delta;/Delta delta
+&lambda;/Lambda lambda
+&omega;/Omega omega
+&phi;/Phi phi
+
+&larr;/Larr seta esquerda
+&rarr;/Rarr seta direita
+&uarr;/Uarr seta pra cima
+&darr;/Darr seta pra baixo
+&harr;/Harr seta pros 2 lados
+
+&spades; naipe espada
+&clubs; naipe paus
+&hearts; naipe copas
+&diams; naipe ouro

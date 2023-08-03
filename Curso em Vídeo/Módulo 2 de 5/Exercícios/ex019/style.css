@@ -1,0 +1,44 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap') ;
+/* Tudo que em HTML for id em CSS é # (só pode 1 elemento)
+Tudo que em HTML for class em CSS é . (pode múltiplos elementos) */
+
+body{
+    background-color: #77fc6d96;
+    font: normal 400 20px Arial, Verdana, Sans-serif;}
+header{
+    background-color: rgba(255, 255, 255, 0.500);
+    padding: 10px;
+    margin-bottom: 0px;}
+#principal{
+    text-align: center;
+    font: normal 400 2.5em 'Caveat', cursive;
+    color: #357030;
+    margin-top: 15px;
+    text-decoration: none;}
+body h1{
+    text-align: center;
+    margin-top: 0px;
+    font: normal 400 2.5em 'Caveat', cursive;
+    color: #357030;
+    text-decoration: underline;}
+body h2{
+    font: normal 400 1.5em 'Caveat', cursive;
+    text-align: center;
+    margin-bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.300);}
+body p{
+    font: normal 400 .9em Arial, Verdana, Sans-serif;
+    color: black;
+    margin-top: 5px;
+    text-align: justify;
+    text-indent: 20px;}
+.basico{
+    color: #52B04C;}
+.intermediario{
+    color: #aeb04c;}
+.avancado{
+    color: #b04c4c;}
+.destaque{
+    font-weight: 900;
+    font-style: italic;}

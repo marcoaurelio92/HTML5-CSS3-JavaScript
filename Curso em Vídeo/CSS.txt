@@ -1,0 +1,175 @@
+Capítulo 12 Aula 01:
+
+background-color: lightskyblue;          -> Configura a cor de fundo.
+
+color: mediumblue;          -> Configura a cor da fonte.
+
+font-family: Arial, Helvetica, sans-serif;          -> Configura a fonte usada.
+
+text-align: justify;          -> Configura o alinhamento do texto.
+
+font-size: 20px;          -> Configura o tamanha base da fonte.
+
+font-size: 1.2em;          -> Configura o tamanho da fonte proporcionalmente com o tamanho da fonte base. 1 = o tamanho da fonte base.
+
+Capítulo 12 Aula 03:
+
+@charset "UTF-8";           -> Uma regra sempre fica no começo da página de estilo e começa com @. Essa regra serve pra indicar para página de estilo que ela vai aceitar acentuações.
+
+text-decoration: underline;          -> Sublima um texto.
+
+text-align: right;          -> Alinha um texto a direita.
+
+Capítulo 13 Aula 06:
+
+background-image: linear-gradient(80deg,#2C749A 10%, #3085AA 40%, #2F9DB8, #16A8B5, #10A4A6, #0C8F81, #41B39A, #25B196, #248768, #2D5F2C);          -> Coloca um gradiente de cor de fundo. O parâmetro linear-gradient é degradê se direcionando para um lado, tem o radial-gradient que é o degradê em forma de círculo. No valor do linear primeiro se coloca a direção do degrade e depois vírgula, após isso pode colocar quantas cores quiser e a porcentagem desejada na proporção de cada cor. No valor do radial primeiro se coloca circle e depois quantas cores desejar, com suas porcentagens ou não de proporção.
+
+*{height: 100%;}          -> * É a configuração global das CSS. Nesse caso a gente coloca o seletor height pois assim ficará 100% com o tamanho da página e vai ficar da forma desejada, para usar cor degradê.
+
+background-attachment: fixed;          -> Serve para mesmo que você role a página o background degradê vai ficar fixo.
+
+Capítulo 13 Aula 07:
+
+width: 800px;          -> Configura a largura.
+
+height: 700px;          -> Configura a altura.
+
+margin: auto;          -> Configura a margem.
+
+padding: 10px;          -> Configra o espaçamento dentro do box.
+
+border: 2px solid black;          -> Configura uma borda. O primeiro parâmetro serve pra configurar o espessura da borda. O segundo parâmetro serve pra configurar o tipo de linha. O terceiro parâmetro configura a cor da borda. dashed = tracejado / dotted = pontilhado / double = linha dupla / groove = linha 3D
+
+border-radius: 10px;          -> Arredonda a borda.
+
+box-shadow: 2px 2px 10px #7FDEFF;          -> Configura uma sombra de um box. O primeiro parâmetro é quanto essa sombra vai andar para o lado. O segundo parâmetro é quanto vai andar para baixo. O terceiro é o espalhamento da sombra. O quarto parâmetro é a cor da sombra.
+
+text-align: center;          -> Alinha o texto ao centro.
+
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.768);          -> Configura uma sombra de texto. O primeiro parâmetro é quanto essa sombra vai andar para o lado. O segundo parâmetro é quanto vai andar para baixo. O terceiro é o espalhamento da sombra. O quarto parâmetro é a cor da sombra.
+
+text-indent: 25px;          -> Configura o tamanho do parágrafo.
+
+Capítulo 14 Aula 05:
+
+font-weight: bold;          -> Configura o peso da fonte.
+
+font-style: italic;          -> Configura a fonte. Normal ou Itálico.
+
+font: italic 900 1.2em 'Work Sans', sans-sarif;          -> Shorthand font. font-style -> font-weight -> font-size -> font-family. Se não quiser alguma das configurações só pular a casa.
+
+Capítulo 14 Aula 06:
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Rampart+One&family=Titillium+Web&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');          -> Esta regra foi copiada do google fontes, para inserir uma fonte externa. Copiando o código do Google fontes não é necessário ter a fonte no pc. Lembrando que toda regra de CSS deve ser inserida na folha de CSS logo no começo. 
+
+Capítulo 14 Aula 07:
+
+@font-face {          -> Seletor para inserir uma fonte externa baixada.
+            font-family: hawaii;          -> Este primeiro parâmetro serve pra dar um nome ao arquivo para ser usado.
+            src: url(_fonts/hawaii.otf) format('opentype');          -> Este parâmetro serve pra localizar o arquivo da fonte nova. O parâmetro format('') serve para indicar ao navegador o tipo de formato.
+            font-weight: normal;          -> Este parâmetro serve pra indicar por padrão o peso da fonte quando for usado.
+            font-style: normal;}          -> Este parâmetro serve para indicar por padrâo a configuração do estilo quando for usado.
+            
+        /* Tipos de format() 
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-aat (Apple Advanced Typography)
+        - svg */
+
+Capítulo 15 Aula 03:
+
+: é uma pseudo-classe ex:
+div:hover{background-color: yellow;}           -> O hover é uma pseudo-classe de div nesse caso, que significa quando passar o mouse por cima o background-color vai ficar amarelo.
+
+div > p{display: none;}          -> O display é exibição. Nesse caso está ocultando um parágrafo dentro do div.
+div:hover > p{display: block;}          -> Aqui ta fazendo o mesmo parágrafo ocultado aparecer em block quando passar o mouse por cima.
+<div>
+Passe o mouse aqui
+<p>TEXTO ESCONDIDO...</p>
+</div>
+
+Capítulo 15 Aula 04:
+
+a:visited{color: darkred;}          -> Pseudo-class de link visitado, após clicar no link.
+
+a:active{color: darkblue;}          -> Pseudo-class de link ao ativar(clicando).
+           
+a::after{content: ' [link]';
+         text-decoration: none;
+         font-weight: normal;
+         color: red;}          -> Pseudo-elemento adiciona depois do link.
+
+#  = id
+.  = class
+:  = pseudo-class
+:: = pseudo-elementos
+>  = children
+
+Capítulo 16 Aula 03:
+
+outline: 5px dashed rgb(155, 3, 3);          -> Linha que fica dentro da margem. Envolta da borda.
+
+Capítulo 16 Aula 04:
+
+position: relative;          -> Configura o tipo de posicionamento vai ter um container ou uma tag.
+
+box-sizing: border-box;          -> Configura o tamanho que vai ter um box. Nesse caso o conteúdo vai se basear pela borda do box.
+
+text-transform: uppercase;          -> Configura o tamanho que vai apresentar um texto. Nesse caso tudo em maiúsculo.
+
+transition: 1s;          -> Configura o tempo que vai levar para aparecer as declarações de uma pseudo classe, nesse caso hover.
+
+clear: both;          -> "Limpa" a página esticando o conteúdo principal até o rodapé. Quando se usa uma section e um aside.
+
+Capítulo 16 Aula 05:
+
+box-shadow: inset 4px 5px 9px 1px rgba(0, 0, 0, 0.427);          -> Esta é a forma de sombrear a parte de dentro de um box. Nesse caso foi utilizado o DevTools.
+
+Capítulo 16 Aula 07:
+
+border-image-source: url('borda.png');          -> Esta declaração carrega uma imagem pra ser usada como borda. Só funciona se tiver uma tag border configurada na box.
+
+border-image-slice: 27;          -> Esta declaração serve pra indicar quantas vezes a imagem vai ser "cortada".
+
+border-image-repeat: repeat;          -> Esta declaração serve pra indicar como a imagem vai se comportar como borda.
+
+border-image: url('borda.png') 27 repeat;          -> Shorthands.
+
+Capítulo 17 Aula 06:
+
+:root{
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, Sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: idroid, cursive;}          -> Esta declaração é uma raiz das configurações do site. Aqui podemos deixar um atalho para a paleta de cores do projeto e para as fontes selecionadas.
+
+*{
+    padding: 0px;
+    margin: 0px;}          -> Só pra frizar que essa é uma declaração que faz uma configuração geral dos box.
+
+Capítulo 17 Aula 07:
+
+min-width: 320px;          -> Esta declaração configura uma largura mínima a ser visualizada. Muito utilizada para responsividade.
+ 
+max-width: 1200px;         -> Esta declaração configura uma largura máxima a ser visualizada. Muito utilizada para responsividade.
+
+Capítulo 17 Aula 10:
+
+main p{line-height: 2em;}          -> Altera a altura entre linhas.
+
+.video{scale: 1.03;}          -> Efeito de zoom.
+
+Capítulo 17 Aula 11:
+
+list-style-position: inside;          -> Esta declaração configura o posicionamento do marcador do ul.
+
+list-style-type: '\2714\00A0';          -> Esta declaração configura o tipo de marcador do ul. Nesse caso peguei o código de um emoji no emojipedia. O 00A0 serve de espaço sem quebra de linha, onde ele for inserido vai indicar onde vai ser o espaço.
+
+columns: 2;          -> Indica em quantas colunas a ol ou ul vai ser quebrado. 

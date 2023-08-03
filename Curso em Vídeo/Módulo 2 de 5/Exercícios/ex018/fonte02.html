@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex016/favicon.ico" type="image/x-icon">
+    <title>Fontes Externas baixadas</title>
+    <style>
+        @font-face {
+            font-family: insta;
+            src: url(_fonts/instagram.otf) format('opentype');
+            font-weight: normal;
+            font-style: normal;}
+        @font-face {
+            font-family: hawaii;
+            src: url(_fonts/hawaii.otf) format('opentype');
+            font-weight: normal;
+            font-style: normal;}
+            
+        /* Tipos de format() 
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-aat (Apple Advanced Typography)
+        - svg */
+
+        body{
+            font: 400 1.2em Arial, Helvetica, sans-serif;}
+        body h1{
+            font: 3em insta, sans-serif;}
+        body h2{
+            font: 2em hawaii, sans-serif;}
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat aliquid enim laborum fuga. Quaerat voluptatum praesentium consequatur dolorem aperiam, perferendis in illo qui, aliquid maiores, sapiente hic quis voluptatem odit?<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam incidunt perspiciatis illum et odit fugit aperiam nisi ex autem facilis est, nihil repellendus quasi laudantium quaerat dolorem nemo. Tempora, pariatur?</p>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis tempore ratione vitae vel quam. Tempora sed doloremque autem repellendus labore veritatis quam ipsum nulla temporibus? Voluptatum et repellat quisquam! Accusantium?<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium optio doloremque beatae a vero doloribus veritatis eum? Soluta saepe illum eaque culpa aliquam dolorem est natus, unde expedita nisi aliquid.</p>
+</body>
+</html>
