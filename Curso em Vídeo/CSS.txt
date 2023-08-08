@@ -26,7 +26,9 @@ background-image: linear-gradient(80deg,#2C749A 10%, #3085AA 40%, #2F9DB8, #16A8
 
 *{height: 100%;}          -> * É a configuração global das CSS. Nesse caso a gente coloca o seletor height pois assim ficará 100% com o tamanho da página e vai ficar da forma desejada, para usar cor degradê.
 
-background-attachment: fixed;          -> Serve para mesmo que você role a página o background degradê vai ficar fixo.
+background-attachment: fixed;          -> Serve para a imagem não rolar junto com a página.s
+
+background-position: repeat-x;          -> A imagem de fundo repete horizontalmente, se for repeat-y vai repetir verticalmente.
 
 Capítulo 13 Aula 07:
 
@@ -173,3 +175,38 @@ list-style-position: inside;          -> Esta declaração configura o posiciona
 list-style-type: '\2714\00A0';          -> Esta declaração configura o tipo de marcador do ul. Nesse caso peguei o código de um emoji no emojipedia. O 00A0 serve de espaço sem quebra de linha, onde ele for inserido vai indicar onde vai ser o espaço.
 
 columns: 2;          -> Indica em quantas colunas a ol ou ul vai ser quebrado. 
+
+Projeto 001:
+
+display: flex;
+
+* Esta declaração transforma os containers em flex. Podendo ter outras configurações.
+
+flex-direction: column;
+
+* Esta declaração só funciona com o flex. Vai indicar a direção dos containers.
+
+justify-content: center;
+
+* Esta declaração alinha horizontalmente o conteúdo.
+
+align-items: center;
+
+* Esta declaração alinha verticalmente o conteúdo.
+
+body > main.conteudo > .slider{
+-webkit-appearance: none;}
+
+* Esta declaração tira a aparência do seletor de rolagem.
+
+cursor: pointer;
+
+* Esta declaração configura o cursor.
+
+transition: all 0.5s ease-in-out;
+
+* Esta declaração é usada em conjunto com o :hover, nesse caso quando tirar o mouse de cima o ease-in-out faz a trasition de forma suave.
+
+visibility: visible;
+
+* Esta tag configura a visibilidade de um item.

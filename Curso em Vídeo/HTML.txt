@@ -185,3 +185,25 @@ para delimitar um post de blog ou fórum, uma notícia, etc.
 diretamente do conteúdo nem é um conteúdo periférico (o que caracterizaria um 
 <aside>), mas possui informações sobre autoria do conteúdo, links adicionais, mapa 
 do site, documentos relacionados.
+
+Projeto 001:
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="Gerador de senhas">
+<title>Gerador de senha</title>
+</head>
+
+* Configuração básica de html do Projeto, as configurações novas foram o <meta http-equiv="X-UA-Compatible" content="IE=edge"> e o <meta name="keywords" content="Gerador de senhas">. Inclui manualmente. O primeiro ajuda a configurar a compatibilidade com o edge e o segundo é para ajudar os algorítmos de pesquisa ex: Google.
+
+<input id="slider" class="slider" type="range" min="4" max="20" value="8">
+
+* Esta tag insere um seletor em forma de barra.
+
+<button id="button" class="button-cta">Gerar senha</button>
+
+* Esta tag insere um botão.
