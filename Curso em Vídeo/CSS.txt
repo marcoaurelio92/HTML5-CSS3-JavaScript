@@ -209,7 +209,7 @@ transition: all 0.5s ease-in-out;
 
 visibility: visible;
 
-* Esta tag configura a visibilidade de um item.
+* Esta tag configura a visibilidade de um item, mas se ocultar através dessa declaração o item vai continuar ocupando espaço mesmo não estando visível.
 
 Capítulo 19 Aula 03:
 
