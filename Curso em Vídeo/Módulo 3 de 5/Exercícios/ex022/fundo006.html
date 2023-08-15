@@ -5,17 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="_imagens/favicon.ico" type="image/x-icon">
-    <title>Tamanho de imagem de fundo</title>
+    <title>Configuração de imagem de fundo e shorthand</title>
     <style>
         body{
             height: 100vh;
+            padding: 30px;
+           /* background shorthand
             background-color: black;
             background-image: url("_imagens/wallpaper002.jpg");
             background-position: center center;
             background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed; */
+            background: black url("_imagens/wallpaper002.jpg") center center no-repeat fixed;
             background-size: cover;}
         body > main{
-            width: 600px;
+            max-width: 700px;
             margin: auto;
             padding: 10px;
             background-color: white;

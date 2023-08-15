@@ -218,3 +218,13 @@ background-image: url('_imagens/pattern001.png');          -> Esta declaração 
 background-size: 200px 200px;          -> Esta declaração configura o tamanho da imagem de fundo. Cover faz cortes na imagem mas preenche a tela inteira, Contain exibe 100% da imagem mas vai aparecer faixas pretas.
 
 background-repeat: repeat-y;}         -> Esta declaração configura a "repetição" da imagem de fundo.
+
+Capítulo 19 Aula 06:
+
+background shorthand:
+background-color: black;
+background-image: url("_imagens/wallpaper002.jpg");
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;          -> Esta é a ordem da shorthand 'background'. Vale ressaltar que o size ainda não é aceito pelos navegadores, nessa caso o backgroud-size vai ter que ficar fora da shorthand.
