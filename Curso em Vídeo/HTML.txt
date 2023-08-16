@@ -38,12 +38,7 @@ Capítulo 06 Aula 04:
 
 Capítulo 06 Aula 05:
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">          -> Tag para adicionar o favicon. No carderno tem sites para conseguir ico e para converter ico. Em href="aqui vem o local de origem e o nome do arquivo.ico".
-    <title>Teste de Favicon</title>
-</head>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">          -> Tag para adicionar o favicon. No carderno tem sites para conseguir ico e para converter ico. Em href="aqui vem o local de origem e o nome do arquivo.ico".
 
 Capítulo 07 Aula 01:
 
@@ -51,10 +46,7 @@ Capítulo 07 Aula 01:
 
 Capítulo 08 Aula 01:
 
-<body>
-    <h1>Exemplos:</h1>
-    <p>Eu moro na <address>Rua dos Capixabas, 229 - Botafogo - RJ</address></p>          -> A tag <address> da sentido semântico ao valor.
-</body>
+<address>Rua dos Capixabas, 229 - Botafogo - RJ</address></p>          -> A tag <address> da sentido semântico ao valor.
 
 Capítulo 08 Aula 02/03:
 
