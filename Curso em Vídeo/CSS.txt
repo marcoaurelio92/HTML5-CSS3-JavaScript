@@ -228,3 +228,10 @@ background-position: center center;
 background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;          -> Esta é a ordem da shorthand 'background'. Vale ressaltar que o size ainda não é aceito pelos navegadores, nessa caso o backgroud-size vai ter que ficar fora da shorthand.
+
+Capítulo 19 Aula 07:
+
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);          -> Esta tag direciona o container para direita e para baixo, uma forma de ajudar a centralizar algum container.
