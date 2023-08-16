@@ -1,18 +1,24 @@
 Capítulo 04 Aula 02:
 
 <!DOCTYPE html>          -> Indica que esse documento vai ser em html 5.
+
 <html lang="pt-br">         -> Todo o site vai ser marcado dentro dessa tag. O 1º parâmetro indica que vai ser um site no idioma desejado.
-    <head>          -> Parte do "cabeça da página".
-        <meta charset="UTF-8">          -> Indica que vai aceitar todo o tipo de acentuação.
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">          -> Indica que a página HTML vai abrir em todo área disponível no navegador.
-        <title>Meu primeiro exercício</title>          -> Nome do HTML.
-    </head>
-    <body>          -> Corpo do site.
-	<h1>          -> Primeiro título
-	<hr>          -> Linha horizontal
-	<p>          -> Parágrafo
-    </body>
-</html>       
+
+<head>          -> Parte do "cabeça da página".
+
+<meta charset="UTF-8">          -> Indica que vai aceitar todo o tipo de acentuação.
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">          -> Indica que a página HTML vai abrir em todo área disponível no navegador.
+
+<title>Meu primeiro exercício</title>          -> Nome do HTML.
+
+<body>          -> Corpo do site.
+
+<h1>          -> Primeiro título
+
+<hr>          -> Linha horizontal
+
+<p title="Sobre o Ipad">          -> Parágrafo. O atributo define alguns extras informações sobre um elemento. O valor do atributo title será exibido como uma dica de ferramenta quando Você passa o mouse sobre o elemento.
 
 Capítulo 05 Aula 01:
 
@@ -72,7 +78,7 @@ Capítulo 08 Aula 04:
 
 <code>          -> Esta tag indica que o texto é um código de computador, como efeito visual vai deixar as letras no modo mono-espaçadas.
 
-<pre>          -> Esta tag é muito útil se utilizada com a tag code. Esta tag deixa pre configurado tudo que estiver em seu valor, respeitando quebra de linha, espaços e margens.
+<pre>          -> O elemento HTML define o texto pré-formatado. O texto dentro de um elemento é exibido em uma fonte de largura fixa (geralmente Courier), e preserva espaços e quebras de linha.
 
 <q>          -> Esta tag serve para indicar uma citação simples de uma forma semântica.
 
