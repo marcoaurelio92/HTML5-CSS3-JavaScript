@@ -234,4 +234,8 @@ Capítulo 19 Aula 07:
 position: absolute;
 top: 50%;
 left: 50%;
-transform: translate(-50%, -50%);          -> Esta tag direciona o container para direita e para baixo, uma forma de ajudar a centralizar algum container.
+transform: translate(-50%, -50%);          -> Esta tag direciona o container para direita e para baixo, uma forma de ajudar a centralizar algum container. 
+
+Capítulo 20 Aula 04:
+
+font-variant: small-caps;          -> Essa é uma forma de deixar um texto maiúsculo, só que diferente do uppercase, esta declaração vai manter as maiúsculas maiores e as minúsculas menores.
