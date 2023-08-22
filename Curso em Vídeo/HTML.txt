@@ -205,3 +205,13 @@ Projeto 001:
 <button id="button" class="button-cta">Gerar senha</button>
 
 * Esta tag insere um botão.
+
+Capítulo 21 Aula 03:
+
+<table>          -> Tabela. 
+
+<tr>          -> Linha de tabela. Só pra lembrar que tr, th e td não precisam de fechamento.
+
+<th>          -> Cabeçalho de tabela. Só pra lembrar que tr, th e td não precisam de fechamento.
+
+<td>          -> Dado de tabela. Só pra lembrar que tr, th e td não precisam de fechamento.

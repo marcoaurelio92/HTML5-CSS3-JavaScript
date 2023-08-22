@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex022/_imagens/favicon.ico" type="image/x-icon">
+    <title>Tabelas</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;}
+        body{
+            height: 100vh;
+            width: 100%;}
+        div#bloco{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: block;}
+        h1{
+            margin: 20px 10px;
+            padding: 5px;
+            background-color: rgba(197, 195, 195, 0.51);}
+        table{
+            max-width: 350px;
+            width: 100%;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-collapse: collapse;}
+        td{
+            padding: 3px;
+            border: 1px solid black;}
+        tr.linha{
+            background-color: rgba(118, 118, 118, 0.51);}
+        td.dado{
+            background-color: yellow;}
+        td.atencao{
+            background-color: red;}
+    </style>
+</head>
+<body>
+    <!-- Hierarquia de Tabela (simples): 
+        <table> = tabela 
+            <tr> = linha de tabela
+                <th></th> = cabeçalho de tabela
+                <td></td> = dado de tabela
+            </tr>
+        </table> (só pra lembrar que tr, th e td não precisam de fechamento) -->
+    <div id="bloco">
+        <h1>Minha primeira tabela:</h1>
+            <table>
+                <tr class="linha"> <!-- Primeira linha -->
+                    <td>A1</td>
+                    <td>B1</td>
+                    <td>C1</td>
+                </tr>
+                <tr> <!-- Segunda linha -->
+                    <td>A2</td>
+                    <td>B2</td>
+                    <td>C2</td>
+                </tr>
+                <tr class="linha"> <!-- Terceira linha -->
+                    <td>A3</td>
+                    <td>B3</td>
+                    <td>C3</td>
+                </tr>
+                <tr> <!-- Quarta linha -->
+                    <td>A4</td>
+                    <td>B4</td>
+                    <td>C4</td>
+                </tr>
+                <tr> <!-- Quinta linha -->
+                    <td class="dado">A5</td>
+                    <td class="dado">B5</td>
+                </tr>
+                <tr> <!-- Sexta linha -->
+                    <td class="atencao">A6</td>
+                </tr>
+            </table>
+    </div>
+</body>
+</html>
