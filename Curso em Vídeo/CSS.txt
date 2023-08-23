@@ -240,3 +240,7 @@ font-variant: small-caps;          -> Essa é uma forma de deixar um texto maiú
 Capítulo 21 Aula 02:
 
 border-collapse: collapse;          -> Essa declaração serve para juntar as linhas da tabela. O padrão da propriedade é ser separate.
+
+Capítulo 21 Aula 03:
+
+vertical-align: top;          -> Esta declaração alinha verticalmente.
