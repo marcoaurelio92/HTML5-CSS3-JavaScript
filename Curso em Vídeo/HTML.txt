@@ -215,3 +215,11 @@ Capítulo 21 Aula 03:
 <th>          -> Cabeçalho de tabela. Só pra lembrar que tr, th e td não precisam de fechamento.
 
 <td>          -> Dado de tabela. Só pra lembrar que tr, th e td não precisam de fechamento.
+
+Capítulo 21 Aula 04:
+
+<thead>          -> Cabeçalho de tabela semântico.
+
+<tbody>          -> Corpo de tabela semântico.
+
+<tfoot>          -> Rodapé de tabela semântico.
