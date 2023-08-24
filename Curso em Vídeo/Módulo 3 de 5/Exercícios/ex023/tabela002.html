@@ -29,6 +29,11 @@
         table{
             width: 450px;
             border-collapse: collapse;}
+        caption{
+            padding: 5px 0px;
+            background-color: lightgray;
+            font-size: 1.2em;
+            font-weight: bold;}
         thead, tfoot{
             background-color: gray;
             color: white;}
@@ -46,10 +51,11 @@
         <div id="bloco">
             <h1>Criando uma tabela grande:</h1>
             <table>
+                <caption>População das unidades federativas</caption>
                 <thead>
                     <tr>
-                        <th>Estados:</th>
-                        <th>População:</th>
+                        <th scope="col">Estados:</th>
+                        <th scope="col" style="width: 100px;">População:</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -164,8 +170,8 @@
                 </tbody>
                 <tfoot>
                     <tr>
-                        <th>Total:</th>
-                        <td><strong>203.062.512</strong></td>
+                        <th scope="row">Total:</th>
+                        <td style="text-align: right;"><strong>203.062.512</strong></td>
                     </tr>
                 </tfoot>
             </table>
