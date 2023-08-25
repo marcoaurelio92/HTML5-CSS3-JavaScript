@@ -244,3 +244,7 @@ border-collapse: collapse;          -> Essa declaração serve para juntar as li
 Capítulo 21 Aula 03:
 
 vertical-align: top;          -> Esta declaração alinha verticalmente.
+
+Capítulo 21 Aula 06:
+
+tbody > tr:nth-child(odd){background-color: white;}          -> Efeito zebrado em tabela. (odd = ímpar / even = par / 2n-1 = ao ínves de colocar na segunda linha coloca na primeira por causa do -1 / 2n = pula a primeira e coloca na segunda)
