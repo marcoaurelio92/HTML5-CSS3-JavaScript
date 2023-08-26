@@ -248,3 +248,13 @@ vertical-align: top;          -> Esta declaração alinha verticalmente.
 Capítulo 21 Aula 06:
 
 tbody > tr:nth-child(odd){background-color: white;}          -> Efeito zebrado em tabela. (odd = ímpar / even = par / 2n-1 = ao ínves de colocar na segunda linha coloca na primeira por causa do -1 / 2n = pula a primeira e coloca na segunda)
+
+Capítulo 21 Aula 07:
+
+table{position: relative;}
+
+thead, tfoot{background-color: gray;}
+
+thead > tr > th{position: sticky;
+            	top: 0px;
+            	background-color: gray;}          -> Esta configuração faz com que os th da tabela acompanhe a coluna conforme o cliente for rolando o site.

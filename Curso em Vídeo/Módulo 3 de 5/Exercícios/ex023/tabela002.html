@@ -25,9 +25,10 @@
         h1{
             padding-top: 1vh;
             padding-bottom: 1vh;
-            font-size: 2em;}
+            font-size: 3em;}
         table{
             width: 450px;
+            position: relative;
             border-collapse: collapse;}
         caption{
             padding: 5px 0px;
@@ -37,6 +38,11 @@
         thead, tfoot{
             background-color: gray;
             color: white;}
+        thead > tr > th{
+            position: sticky;
+            top: 0px;
+            background-color: gray;
+        }
         tbody > tr:nth-child(odd){ /* 2n-1 */
             background-color: white;}
         tbody > tr:nth-child(even){ /* 2n */
@@ -48,6 +54,16 @@
             text-align: right;}
         tfoot > tr > td{
             text-align: center;}
+        aside#secundario{
+            width: 450px;
+            margin: auto;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: justify;
+            text-indent: 60px;
+            line-height: 2em;
+            font-size: 1.3em;
+        }
     </style>
 </head>
 <body>
@@ -180,6 +196,9 @@
                 </tfoot>
             </table>
         </div>
+            <aside id="secundario">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, perspiciatis quae minima eum ea ipsa ad vel inventore odit labore culpa omnis porro temporibus excepturi nesciunt? Blanditiis totam perferendis quo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid ad suscipit iusto rem officia necessitatibus, ut error eveniet debitis molestiae, saepe, veritatis libero hic aspernatur expedita facere exercitationem ducimus maxime. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia fuga repellat et autem, quos excepturi, odio ut minima doloribus ad earum inventore maiores saepe eos expedita maxime molestiae, dicta molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum modi vitae magnam impedit ipsam soluta expedita officia molestiae. Provident praesentium error numquam aliquid nulla, harum temporibus labore quia ex debitis.</p>
+            </aside>
     </main>
 </body>
 </html>
