@@ -214,7 +214,7 @@ Capítulo 21 Aula 03:
 
 <tr>          -> Linha de tabela. Só pra lembrar que tr, th e td não precisam de fechamento.
 
-<th scope="col" style="widht: 50px;">          -> Cabeçalho de tabela. Só pra lembrar que tr, th e td não precisam de fechamento. O parâmetro scope indica em qual direção vai seguir os dados desse título. col = coluna / row = linha. O style aplicado após colocar em qual direção vão ficar os dados, automaticamente vai configurar toda a tabela de título e dados.
+<th scope="col" style="widht: 50px;">          -> Cabeçalho de tabela. Só pra lembrar que tr, th e td não precisam de fechamento. O parâmetro scope indica em qual direção vai seguir os dados desse título. col = coluna / row = linha / colgroup = quando o th é mesclado e possui mais de 1 coluna / rowgroup = quando o th é mesclado e possui mais de 1 linha. O style aplicado após colocar em qual direção vão ficar os dados, automaticamente vai configurar toda a tabela de título e dados.
 
 <td colspan="2">          -> Dado de tabela. Só pra lembrar que tr, th e td não precisam de fechamento. O parâmetro "colspan" faz essa célula ocupar 2 colunas na horizontal. O parâmetro também pode ser "rowspan" nesse caso vai mesclar a linha na vertical.
 
