@@ -258,3 +258,7 @@ thead, tfoot{background-color: gray;}
 thead > tr > th{position: sticky;
             	top: 0px;
             	background-color: gray;}          -> Esta configuração faz com que os th da tabela acompanhe a coluna conforme o cliente for rolando o site.
+
+Capítulo 21 Aula 14:
+
+body > div#container{overflow-x: auto;}          -> A declaração "overflow" serve para colocar uma barra de rolagem em um conteúdo de um container. Ex: tabelas. Ajuda deixar o item responsivo. O conteúdo da div é uma tabela nesse caso.
