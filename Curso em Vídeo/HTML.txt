@@ -225,3 +225,12 @@ Capítulo 21 Aula 04:
 <tbody>          -> Corpo de tabela semântico.
 
 <tfoot>          -> Rodapé de tabela semântico.
+
+Capítulo 21 Aula 13:
+
+<table>
+<colgroup>
+<col class="amarelo">
+<col class="vermelho" span="2">
+<col class="amarelo">
+</colgroup>          -> Esta tag "colgroup" foi baseada em cima de uma tabela com 4 colunas. O colgroup serve para usar em conjunto com o css para configurar cada coluna que vão ser identificadas por ordem com a tag "col". Nesse exemplo a primeira e a quarta coluna estão em amarelo, a segunda e a terceira estão vermelhas.
