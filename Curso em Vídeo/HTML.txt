@@ -234,3 +234,7 @@ Capítulo 21 Aula 13:
 <col class="vermelho" span="2">
 <col class="amarelo">
 </colgroup>          -> Esta tag "colgroup" foi baseada em cima de uma tabela com 4 colunas. O colgroup serve para usar em conjunto com o css para configurar cada coluna que vão ser identificadas por ordem com a tag "col". Nesse exemplo a primeira e a quarta coluna estão em amarelo, a segunda e a terceira estão vermelhas.
+
+Capítulo 22 Aula 01:
+
+<iframe src="https://cursoemvideo.com" frameborder="0"></iframe>          -> A tag iframe cria um "quadro" em linha (display padrão) para exibição de diversos conteúdos. Nesse exemplo está abrindo um quadro exibindo o site do cursoemvideo.com em linha no parágrafo. O primeiro parâmetro src é para busca do conteúdo. O segundo parâmetro serve pra borda do quadro.
