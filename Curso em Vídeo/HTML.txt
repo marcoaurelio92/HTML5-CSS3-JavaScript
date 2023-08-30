@@ -237,4 +237,6 @@ Capítulo 21 Aula 13:
 
 Capítulo 22 Aula 01:
 
-<iframe src="https://cursoemvideo.com" frameborder="0"></iframe>          -> A tag iframe cria um "quadro" em linha (display padrão) para exibição de diversos conteúdos. Nesse exemplo está abrindo um quadro exibindo o site do cursoemvideo.com em linha no parágrafo. O primeiro parâmetro src é para busca do conteúdo. O segundo parâmetro serve pra borda do quadro.
+<iframe src="https://www.google.com" frameborder="0" scolling="no">
+        <a href="https://www.google.com" target="_blank" rel="external">www.google.com</a>
+</iframe>          -> A tag iframe cria um "quadro" em linha (display padrão) para exibição de diversos conteúdos por padrão 300x150. Nesse exemplo está abrindo um quadro exibindo o site do cursoemvideo.com em linha no parágrafo. O primeiro parâmetro src é para busca do conteúdo. O segundo parâmetro serve pra borda do quadro só aceita 0 ou 1. O terceiro parâmetro configura a rolagem (maioria dos navegadores ainda não reconhecem). Se o navegador não for compatível com iframe vai aparecer aquele link.
