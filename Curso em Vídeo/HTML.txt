@@ -240,3 +240,9 @@ Capítulo 22 Aula 01:
 <iframe src="https://www.google.com" name="tela" frameborder="0" scolling="no">
         <a href="https://www.google.com" target="_blank" rel="external">www.google.com</a>
 </iframe>          -> A tag iframe cria um "quadro" em linha (display padrão) para exibição de diversos conteúdos por padrão 300x150. Nesse exemplo está abrindo um quadro exibindo o site do cursoemvideo.com em linha no parágrafo. O primeiro parâmetro src é para busca do conteúdo também existe o srcdoc que além de aceitar um endereço externo ou interno, também aceita códigos simples(lembrando que sempre a melhor opção é criar uma página com seus códigos próprios). O segundo parâmetro serve pra borda do quadro só aceita 0 ou 1. O terceiro parâmetro configura a rolagem (maioria dos navegadores ainda não reconhecem). Se o navegador não for compatível com iframe vai aparecer aquele link. O parâmetro name serve pra inserir um nome ao iframe e localizar em um target de algum <a>.
+
+Capítulo 22 Aula 07:
+
+<iframe src="_paginas-extras/pag04.html" frameborder="1" sandbox="allow-same-origin allow-forms" referrerpolicy="no-referrer">
+	Desculpe ! Seu navegador não é compatível com iframe.
+</iframe>          -> O parâmetro sandbox serve para ajudar a proteger o seu site dos iframes. Nesse caso ele bloqueia qualquer ação do iframe quando for sandbox="sandbox". Se quiser pode ir no Ctrl+espaço e ir liberando somente algumas ações desejadas. O parâmetro referrerpolicy (política de privacidade) serve para configurar a captura de dados através do iframe. Por padrão ele vem referrerpolicy="no-referrer-when-downgrade", quando colocar no-referrer vai bloquear qualquer ação de captura de dados através do iframe. 
