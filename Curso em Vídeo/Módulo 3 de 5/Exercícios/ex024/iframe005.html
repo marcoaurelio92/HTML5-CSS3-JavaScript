@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex022/_imagens/favicon.ico" type="image/x-icon">
+    <title>Adicionando conteúdos</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            position: sticky;
+            top: 0px;
+            width: 100%;
+            height: 100px;
+            background-color: rgba(63, 63, 63, 0.397);
+            box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, 0.105);
+        }
+        header > h1{
+            padding-top: 30px;
+            text-align: center;
+            font-variant: small-caps;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.211);
+        }
+        body{
+            
+            background-color: white(80, 80, 80);
+        }
+        body > main{
+            min-width: 320px;
+            max-width: 800px;
+            width: 100%;
+            padding: 0px 10px 10px 10px;
+            margin: 0px auto;
+            background-color: rgba(175, 175, 175, 0.479);
+            color: white;
+        }
+        body > main > h1{
+            text-align: center;
+            padding: 20px;
+            color: black;
+            font-variant: small-caps;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.211);
+        }
+        body > main > p{
+            padding-bottom: 10px;
+            text-align: justify;
+            text-indent: 40px;
+            line-height: 1.4em;
+            color: black;
+            font-weight: 600;
+        }
+        body > main > h2{
+            padding-bottom: 20px;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.211);
+        }
+        body > main > div.conteudo{
+            margin: auto;
+            margin-bottom: 10px;
+            max-width: 600px;
+            height: 300px;
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Conteúdos em iframe</h1>
+    </header>
+    <main>
+        <h1>Torcida do Vasco</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt veniam corporis, odio atque temporibus eveniet voluptatem ad nobis voluptatibus aperiam qui sapiente ipsum necessitatibus? Quasi velit consectetur dolore necessitatibus voluptatum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex qui, doloremque voluptas fugiat cumque sint similique perspiciatis voluptate hic? Itaque, molestiae unde! Maxime officiis reiciendis amet atque modi, pariatur culpa?</p>
+        <div class="conteudo">
+            <iframe src="https://player.vimeo.com/video/27514965?h=38350ef721&title=0&byline=0&portrait=0" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores quaerat debitis perferendis dolore! Impedit dicta maxime enim sequi natus molestiae? Vel magni quis exercitationem perspiciatis minima repellendus, incidunt ipsum similique.</p>
+        <h2>Google maps</h2>
+        <div class="conteudo"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.601769752347!2d-43.228042699999996!3d-22.8911648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997eea386659df%3A0x915e7bfd2cc5d456!2zRXN0w6FkaW8gU8OjbyBKYW51w6FyaW8!5e0!3m2!1spt-BR!2sbr!4v1693855608539!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <h2>Waze</h2>
+        <div class="conteudo"><iframe src="https://embed.waze.com/iframe?zoom=17&lat=-22.891816&lon=-43.228101&ct=livemap" width="100%" height="300" allowfullscreen></iframe></div>
+</main>
+</body>
+</html>
