@@ -29,3 +29,18 @@ main > section > iframe.tela{
     position: relative;
     top: 80px;
     left: 23px;}
+main > section#social{
+    padding-top: 70px;
+    padding-right: 20px;
+    text-align: right;}
+main > section#social img{
+    width: 50px;
+    margin: 8px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.401);
+    transition: transform .4s, border .8s;}
+section#social img:hover{
+    transform: translate(-4px, -4px);
+    border: 1px solid white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.604);}
