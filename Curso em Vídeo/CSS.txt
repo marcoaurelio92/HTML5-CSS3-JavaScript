@@ -262,3 +262,7 @@ thead > tr > th{position: sticky;
 Capítulo 21 Aula 14:
 
 body > div#container{overflow-x: auto;}          -> A declaração "overflow" serve para colocar uma barra de rolagem em um conteúdo de um container. Ex: tabelas. Ajuda deixar o item responsivo. O conteúdo da div é uma tabela nesse caso.
+
+Capítulo 23 Aula 06:
+
+::-webkit-scrollbar{width: 0px; height: 0px;}          -> Forma de tirar a exibição da barra de rolagem.
