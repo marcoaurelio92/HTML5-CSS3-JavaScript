@@ -249,4 +249,12 @@ Capítulo 22 Aula 07:
 
 Capítulo 24 Aula 01:
 
-<form>          -> Tag pra criar formulário.
+<form action="cadastro.php" autocomplete="off">          -> Tag pra criar formulário. O primeiro parâmetro "action" serve para indicar a ação após preenchimento do formulário, pode ser a liguagem que vc quiser. O segundo parâmetro serve para bloquear ou não o auto complete de preenchimento para o cliente.
+
+Capítulo 24 Aula 02:
+
+<label for="inome">Nome:</label>          -> Serve de uma forma semântica relacionar o item ao dado inserido pelo cliente no formulário. O primeiro parâmentro serve para indicar o id do objeto relacionado ao label. 
+
+<input type="text" name="nome" id="inome">          -> Insere um objeto ao formulário. O primeiro parâmetro serve para indicar o tipo de objeto nessa caso uma caixa de texto. O segundo parâmetro "name" serve para relacionar o objeto a alguma linguagem como php. O terceiro parâmetro id serve para indentificar para um javascript por exemplo ou css.
+
+<input type="submit" value="Enviar">          -> Insere um objeto ao formulário. O primeiro parâmetro serve para indicar o tipo de objeto nessa caso um botão. O segundo parâmetro serve para por "valor" no botão. Ex: enviar.
