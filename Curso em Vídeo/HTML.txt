@@ -249,7 +249,7 @@ Capítulo 22 Aula 07:
 
 Capítulo 24 Aula 01:
 
-<form action="cadastro.php" autocomplete="off">          -> Tag pra criar formulário. O primeiro parâmetro "action" serve para indicar a ação após preenchimento do formulário, pode ser a liguagem que vc quiser. O segundo parâmetro serve para bloquear ou não o auto complete de preenchimento para o cliente.
+<form action="cadastro.php" method="get" autocomplete="off">          -> Tag pra criar formulário. O primeiro parâmetro "action" serve para indicar a ação após preenchimento do formulário, pode ser a liguagem que vc quiser. O segundo parâmetro serve para bloquear ou não o auto complete de preenchimento para o cliente. O parâmetro "method" vai definir a forma de envio dos dados, por padrão é get(uma forma pouca coisa mais rápido porém tem um limite de envio de dados e vai aparecer os dados na url e temos o "method" post o que seria oposto do get e os dados não aparecem na url.
 
 Capítulo 24 Aula 02:
 
@@ -258,3 +258,11 @@ Capítulo 24 Aula 02:
 <input type="text" name="nome" id="inome">          -> Insere um objeto ao formulário. O primeiro parâmetro serve para indicar o tipo de objeto nessa caso uma caixa de texto. O segundo parâmetro "name" serve para relacionar o objeto a alguma linguagem como php. O terceiro parâmetro id serve para indentificar para um javascript por exemplo ou css.
 
 <input type="submit" value="Enviar">          -> Insere um objeto ao formulário. O primeiro parâmetro serve para indicar o tipo de objeto nessa caso um botão. O segundo parâmetro serve para por "valor" no botão. Ex: enviar.
+
+Capítulo 24 Aula 04:
+
+<form action="cadastro.php" method="post" autocomplete="on">          -> O parâmetro autocomplete nesse caso tá sendo configurado também no input a seguir.
+
+<input type="password" name="sen" id="isen" minlength="6" maxlength="15" size="15" required placeholder="Senha de login" autocomplete="current-password">          -> Insere um objeto ao formulário. O primeiro parâmetro serve para indicar o tipo de objeto nessa caso uma caixa de senha. O segundo parâmetro "name" serve para relacionar o objeto a alguma linguagem como php. O terceiro parâmetro id serve para indentificar para um javascript por exemplo ou css. O parâmetro minlength serve para parâmento na quantidade mín de caractéres. O parâmetro maxlength serve para parâmento na quantidade max de caractéres. O parâmetro size é o tamanho do box, vai se basear na quantidade de caractéres específicado. O parâmetro required serve para indicar que o preenchimento do box é obrigatório para o envio de dados do formulário. O placeholder vai ser uma dica do que se trata o box. O parâmetro autocomplete no label só funciona se o autocomplete estiver on no form, vai permitir um preenchimento mais eficiente do box.
+
+<input type="reset" value="Limpar">         -> Insere um objeto ao formulário. O primeiro parâmetro serve para indicar o tipo de objeto nessa caso um botão de resetar os campos. O segundo parâmetro serve para por "valor" no botão. Ex: Limpar.

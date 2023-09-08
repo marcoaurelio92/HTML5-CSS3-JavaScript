@@ -18,16 +18,18 @@
             margin-top: 20px;
             margin-bottom: 30px;}
         body > form{
+            margin: auto;
             padding: 5px;
             width: 350px;
             border: 1px solid black;}
         body > form > p{
-            margin: 5px;}
+            margin: 5px;
+            text-align: center;}
     </style>
 </head>
 <body>
     <h1>Meu primeiro formulário:</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" method="post" autocomplete="off">
         <p>
             <label for="inome">Nome:</label>
                 <input type="text" name="nome" id="inome">
