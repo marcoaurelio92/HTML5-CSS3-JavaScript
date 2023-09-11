@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex024/_imagens/favicon.ico" type="image/x-icon">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo:</legend>
+                <p>
+                        <input type="radio" name="sex" id="imasc" value="M" checked> 
+                    <label for="imasc">Masculino</label>
+                        <input type="radio" name="sex" id="ifem" value="F">
+                    <label for="ifem">Feminino</label>
+                </p>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes:</legend>
+                <p>
+                        <input type="checkbox" name="jiu" id="ijiu">
+                    <label for="ijiu">Jiu-Jitsu</label>
+                        <input type="checkbox" name="muay" id="imuay">
+                    <label for="imuay">Muay-Thai</label>
+                        <input type="checkbox" name="jud" id="ijud">
+                    <label for="ijud">Judô</label>
+                        <input type="checkbox" name="box" id="ibox">
+                    <label for="ibox">Boxe</label>
+                        <input type="checkbox" name="mma" id="imma">
+                    <label for="imma">MMA</label>
+                        <input type="checkbox" name="capo" id="icapo">
+                    <label for="icapo">Capoeira</label>
+                </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
