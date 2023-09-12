@@ -299,4 +299,24 @@ Capítulo 24 Aula 09:
 
 <input type="range" name="sat" id="isat" min="1" max="10" value="7">          -> Insere um objeto ao formulário. O primeiro parâmetro serve para indicar o tipo de objeto nesse caso um seletor em barra. O segundo parâmetro "name" serve para relacionar o objeto a alguma linguagem como php. O terceiro parâmetro id serve para indentificar para um javascript por exemplo ou css. Por padrão o range é de 0 a 100, com min e max é possivel alterar esse limite. O parâmetro step funciona no range. O parâmetro value nesse caso indicará em que altura vai ficar o range por padrão toda vez que o site for carregado.
 
-<input type="file" name="foto" id="ifoto">          -> Insere um objeto ao formulário. O primeiro parâmetro serve para indicar o tipo de objeto nesse caso um objeto para carregar uma img. O segundo parâmetro "name" serve para relacionar o objeto a alguma linguagem como php. O terceiro parâmetro id serve para indentificar para um javascript por exemplo ou css. Vale ressaltar que formulários que vão enviar mais de 3000kb dever ser method="post".
+<input type="file" name="foto" id="ifoto">          -> Insere um objeto ao formulário. O primeiro parâmetro serve para indicar o tipo de objeto nesse caso um objeto para carregar uma img. O segundo parâmetro "name" serve para relacionar o objeto a alguma linguagem como php. O terceiro parâmetro id serve para indentificar para um javascript por exemplo ou css. Vale ressaltar que formulários que vão enviar mais de 3000kb devem ser method="post".
+
+Capítulo 24 Aula 10:
+
+<select name="est" id="iest">          -> Insere um box com uma lista de opções para selecionar 1. O primeiro parâmetro "name" serve para relacionar o objeto a alguma linguagem como php. O segundo parâmetro id serve para indentificar para um javascript por exemplo ou css.
+
+<option value="" selected>-- Escolha seu estado --</option>          -> Esta tag acrescenta um dado ao select do form. Nesse caso o parâmetro value não foi preenchido pois essa option foi utilizada como se fosse um placeholder do select. O segundo parâmetro selected serve para deixar esse option selecionado por padrão toda vez que for carregado o site.
+
+<optgroup label="Região Sudeste">          -> Esta tag serve para agrupar options dentro de um select. O label aqui vira um parâmetro para identificar o optgroup.
+
+<option value="Rj">Rio de Janeiro</option>          -> Esta tag acrescenta um dado ao select do form. O parâmetro value nesse caso vai identificar a resposta selecionada na transmissão de dados.
+
+<label for="iprof">Profissão:</label>          -> Serve de uma forma semântica relacionar o item ao dado inserido pelo cliente no formulário. O primeiro parâmentro serve para indicar o id do objeto relacionado ao label. Nesse caso está aqui para mostrar de exemplo a construção para concluir um datalist.
+
+<input type="text" name="prof" id="iprof" list="profissao" placeholder="Sua profissão">          -> Insere um objeto ao formulário. O primeiro parâmetro serve para indicar o tipo de objeto nesse caso uma caixa de texto. O segundo parâmetro "name" serve para relacionar o objeto a alguma linguagem como php. O terceiro parâmetro id serve para indentificar para um javascript por exemplo ou css. O quarto parâmetro list serve para linkar essa caixa de texto com o id do datalist. O quinto parâmetro placeholder vai ser uma dica do que se trata o box. Nesse caso está aqui para mostrar de exemplo a construção para concluir um datalist. 
+
+<datalist id="profissao">          -> Esta tag faz uma lista para uma caixa de texto. O parâmetro id aqui serve para linkar com o text através do parâmetro list.
+
+<option>Desenvolvedor de Web e APP</option>         -> Esta tag acrescenta um dado ao select do form. O parâmetro value nesse não foi necessário pq o value acaba sendo exibido na lista e pode ficar estranho, vai de acordo com a necessidade.
+
+<textarea name="msg" id="imsg" cols="30" rows="10"></textarea>          -> Esta tag insere uma área de texto para o cliente deixar uma msg ano site. O primeiro parâmetro "name" serve para relacionar o objeto a alguma linguagem como php. O segundo parâmetro id serve para indentificar para um javascript por exemplo ou css. O terceiro parâmetro cols serve para configurar quantas colunas de "largura" a área de texto terá de exibição. O quarto parâmetro rows serve para configurar quantas linhas de "altura" a área de texto terá de exibição. O conteúdo nesse caso é sem limite. Vale ressaltar que formulários que vão enviar mais de 3000kb devem ser method="post".
