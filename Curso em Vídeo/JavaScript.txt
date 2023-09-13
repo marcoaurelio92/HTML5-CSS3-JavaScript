@@ -1,0 +1,12 @@
+Capítulo 24 Aula 11:
+
+<input type="number" name="num1" id="inum1" required min="0" max="50" oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">          -> O parâmetro oninput(quando inserir um dado) utiliza um JavaScript nesse caso o isoma(o output).innerHTML(HTML que esteja dentro do output) = Number(qualquer número)(inum1(id do input).value(número que estiver na caixa)) + Number(tipo do input)(inum2(id da caixa que vai realizar a ação).value(valor que estiver na caixa)). Vai somar o número escolhido no inum1, no inum2 e o resultado aparecerá no output isoma.
+
+<input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="iexi.innerHTML = Number(inum.value)">          -> O parâmetro oninput(quando inserir um dado) utiliza um JavaScript nesse caso o iexi(o output).innerHTML(HTML que esteja dentro do output) = Number(qualquer número)(inum(id do input).value(número que estiver na caixa)). Vai exibir o valor que o range estiver marcando no output iexi.
+
+<input type="number" name="ano" id="iano" required min="1960" max="2023" oninput="calcIdade()">          -> O parâmentro oniput nesse caso chamou uma função que foi criado em script.
+<script>
+function calcIdade() {          -> Função e nome da função
+let atual = new Date().getFullYear()         -> let (variável) atual(nome da variável) = vai pegar o ano completo atual.
+iida.innerHTML = Number(atual) - Number(iano.value)}          -> Tudo que for HTML que estiver em output iida vai ser o resultado de atual - iano. Vai exibir quantos anos a pessoa tem.
+</script>

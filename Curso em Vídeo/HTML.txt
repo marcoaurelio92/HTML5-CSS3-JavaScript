@@ -320,3 +320,7 @@ Capítulo 24 Aula 10:
 <option>Desenvolvedor de Web e APP</option>         -> Esta tag acrescenta um dado ao select do form. O parâmetro value nesse não foi necessário pq o value acaba sendo exibido na lista e pode ficar estranho, vai de acordo com a necessidade.
 
 <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>          -> Esta tag insere uma área de texto para o cliente deixar uma msg ano site. O primeiro parâmetro "name" serve para relacionar o objeto a alguma linguagem como php. O segundo parâmetro id serve para indentificar para um javascript por exemplo ou css. O terceiro parâmetro cols serve para configurar quantas colunas de "largura" a área de texto terá de exibição. O quarto parâmetro rows serve para configurar quantas linhas de "altura" a área de texto terá de exibição. O conteúdo nesse caso é sem limite. Vale ressaltar que formulários que vão enviar mais de 3000kb devem ser method="post".
+
+Capítulo 24 Aula 11:
+
+<output name="soma" id="isoma" >0</output>          -> Diferente do input que insere um objeto o output é uma "saída". Usado em conjunto com o JavaScript.
