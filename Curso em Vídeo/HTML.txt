@@ -324,3 +324,11 @@ Capítulo 24 Aula 10:
 Capítulo 24 Aula 11:
 
 <output name="soma" id="isoma" >0</output>          -> Diferente do input que insere um objeto o output é uma "saída". Usado em conjunto com o JavaScript.
+
+Capítulo 25 Aula 03:
+
+<link rel="stylesheet" href="_estilos/style.css" media="all">          -> Chamada para css media type. Nesse caso está geral ou seja "all". pode ser screen(tela) ou print(impressão).
+
+<link rel="stylesheet" href="_estilos/portrait.css" media="screen and (orientation: portrait)">         -> Chamada para css media type e features para site em modo portrait.
+
+<link rel="stylesheet" href="_estilos/landscape.css" media="screen and (orientation: landscape)">         -> Chamada para css media type e features para site em modo Landscape.
