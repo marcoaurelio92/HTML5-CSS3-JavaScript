@@ -1,0 +1,31 @@
+/* Outra forma de usar o features */
+@charset "UTF-8";
+
+@media all{
+    /* Configurações Gerais */
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;}
+    html, body{
+        width: 100vw;
+        height: 100vh;
+        background-color: #233eff;
+        background-repeat: no-repeat;
+        background-size: contain;}
+    h1{
+        padding: 10px;
+        color: white;
+        text-shadow: 2px 2px 0px #101c74;}}
+@media screen and (orientation: portrait){
+    /* Configurações Portrait */
+
+    body{
+        background: url('../_imagens/cev-portrait.jpg');
+        background-position: center bottom;}}
+@media screen and (orientation: landscape){
+    /* Configurações Landscape */
+
+    body{
+        background-image: url('../_imagens/cev-landscape.jpg');
+        background-position: left bottom;}}
