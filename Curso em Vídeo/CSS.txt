@@ -266,3 +266,19 @@ body > div#container{overflow-x: auto;}          -> A declaração "overflow" se
 Capítulo 23 Aula 06:
 
 ::-webkit-scrollbar{width: 0px; height: 0px;}          -> Forma de tirar a exibição da barra de rolagem.
+
+Capítulo 25 Aula 08:
+
+main::after{content: 'Este conteúdo foi impresso do site www.cursoemvideo.com'; text-decoration: overline;}          -> A declaração content cria um conteúdo após o main. E a declaração text-decoration: overline; cria uma linha em cima do conteúdo.
+
+Typical Device Breakpoints:
+Extra small devices (phones, 600px and down): 
+@media only screen and (max-width: 600px)
+Small devices (portrait tablets and large phones, 600px and up): 
+@media only screen and (min-width: 600px)
+Medium devices (landscape tablets, 768px and up):
+@media only screen and (min-width: 768px)
+Large devices (laptops/desktops, 992px and up):
+@media only screen and (min-width: 992px)
+Extra large devices (large laptops and desktops, 1200px and up):
+@media only screen and (min-width: 1200px)
