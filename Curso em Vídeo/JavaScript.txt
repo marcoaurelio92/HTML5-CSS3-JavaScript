@@ -10,3 +10,10 @@ function calcIdade() {          -> Função e nome da função
 let atual = new Date().getFullYear()         -> let (variável) atual(nome da variável) = vai pegar o ano completo atual.
 iida.innerHTML = Number(atual) - Number(iano.value)}          -> Tudo que for HTML que estiver em output iida vai ser o resultado de atual - iano. Vai exibir quantos anos a pessoa tem.
 </script>
+
+Capítulo 25 Aula 11:
+
+if (itens.style.display == 'block'){
+   itens.style.display = 'none'}
+else{
+   itens.style.display = 'block'}          -> Criando um menu hambúrguer. == é igual. = vai "chamar". itens é o id do menu(html). if é se. else é se não. Na função onclick.
