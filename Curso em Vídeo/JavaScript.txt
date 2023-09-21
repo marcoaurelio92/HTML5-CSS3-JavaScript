@@ -17,3 +17,10 @@ if (itens.style.display == 'block'){
    itens.style.display = 'none'}
 else{
    itens.style.display = 'block'}          -> Criando um menu hambúrguer. == é igual. = vai "chamar". itens é o id do menu(html). if é se. else é se não. Na função onclick.
+
+Capítulo 25 Aula 12: 
+
+if (window.innerWidth >= 768){
+   itens.style.display = 'block'}
+else{
+   itens.style.display = 'none'}          -> Fazendo o javascript rastrear a largura da tela. >= maior ou igual. 
