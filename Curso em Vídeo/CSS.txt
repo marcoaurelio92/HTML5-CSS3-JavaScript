@@ -282,3 +282,7 @@ Large devices (laptops/desktops, 992px and up):
 @media only screen and (min-width: 992px)
 Extra large devices (large laptops and desktops, 1200px and up):
 @media only screen and (min-width: 1200px)
+
+Capítulo 26 Aula 02:
+
+overflow: hidden;          -> Tudo que passar do box vai ser ocultado pela opção hidden. Ex: quando usar um border-radius em uma div.
