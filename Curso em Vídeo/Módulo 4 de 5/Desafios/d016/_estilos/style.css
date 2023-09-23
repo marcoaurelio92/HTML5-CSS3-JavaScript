@@ -39,5 +39,9 @@ div#imagem{
     background-size: cover;}
 div#formulario{
     padding: 10px;}
+div#formulario > h1{
+    text-align: center;
+    padding-bottom: 10px;}
 div#formulario > p{
-    text-align: justify;}
+    text-align: justify;
+    font-size: 0.8em;}
