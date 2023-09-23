@@ -122,6 +122,8 @@ text-transform: uppercase;          -> Configura o tamanho que vai apresentar um
 
 transition: 1s;          -> Configura o tempo que vai levar para aparecer as declarações de uma pseudo classe, nesse caso hover.
 
+transition-timing-function: ease;          -> Suavizar o transition.
+
 clear: both;          -> "Limpa" a página esticando o conteúdo principal até o rodapé. Quando se usa uma section e um aside.
 
 Capítulo 16 Aula 05:
