@@ -18,7 +18,8 @@ Extra large devices (large laptops and desktops, 1200px and up):
     html, body{ 
         background-image: linear-gradient(to top, #49a09d, #5f2c82);}
     section#login{ 
-        width: 80vw;}
+        width: 80vw;
+        height: 300px;}
     section#login > div#imagem{ 
         float: left; 
         width: 30%; 
@@ -32,7 +33,8 @@ Extra large devices (large laptops and desktops, 1200px and up):
     html, body{ 
         background-image: linear-gradient(to top, #49a09d, #5f2c82);}
     section#login{ 
-        width: 950px;}
+        width: 950px;
+        height: 400px;}
     section#login > div#imagem{ 
         float: right; 
         width: 50%; 
