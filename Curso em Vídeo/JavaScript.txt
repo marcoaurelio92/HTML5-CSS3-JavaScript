@@ -24,3 +24,13 @@ if (window.innerWidth >= 768){
    itens.style.display = 'block'}
 else{
    itens.style.display = 'none'}          -> Fazendo o javascript rastrear a largura da tela. >= maior ou igual. 
+
+Curso de JS:
+
+Módulo A Aula 04 - 
+
+window.alert('Aqui é Vasco !!!')          -> Este é o comando de alerta. Assim que carrega o site aparece uma caixa de mensagem.
+
+window.confirm('Confirma se você é Vascão')          -> Este é o comando de confirmação. Assim que carrega o site aparece uma caixa com uma pergunta por exemplo ou uma frase com uma confirmação do cliente. Ex: Maior de 18 anos ? em sites de vinículas.
+
+window.prompt('Escreva seu nome')          -> Este é o comando de caixa de mensagem para o cliente. Ex: Escreva seu nome.
