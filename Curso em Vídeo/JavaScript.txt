@@ -37,4 +37,14 @@ window.prompt('Escreva seu nome')          -> Este é o comando de pergunta para
 
 Módulo B Aula 01 -
 
+Variáveis(forma de armazenar dados):
+
 = é igual a "recebe".
+
+var n1 = 8 typeof n1 'number'
+
+var japa = "minimok" typeof japa 'string'
+
+var n7 = true typeof n7 'boolean'
+
+typeof {} 'object'
