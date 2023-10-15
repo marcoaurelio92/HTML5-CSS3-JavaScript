@@ -34,3 +34,7 @@ window.alert('Aqui é Vasco !!!')          -> Este é o comando de alerta. Assim
 window.confirm('Confirma se você é Vascão')          -> Este é o comando de confirmação. Assim que carrega o site aparece uma caixa com uma pergunta por exemplo ou uma frase com uma confirmação do cliente. Ex: Maior de 18 anos ? em sites de vinículas.
 
 window.prompt('Escreva seu nome')          -> Este é o comando de pergunta para o cliente, vai abrir uma mensagem com uma pergunta. Ex: Escreva seu nome.
+
+Módulo B Aula 01 -
+
+= é igual a "recebe".
