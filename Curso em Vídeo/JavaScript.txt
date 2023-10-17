@@ -48,3 +48,46 @@ var japa = "minimok" typeof japa 'string'
 var n7 = true typeof n7 'boolean'
 
 typeof {} 'object'
+
+Módulo B Aula 06 -
+
+var nome = window.prompt('Qual é o seu nome ?')          -> Vai perguntar o nome e salvar no data 'nome'.
+
+window.alert('Muito obrigado pela visita, ' + nome + "!")          -> Vai emitir um alerta agradecendo pela visita com o nome que o cliente indicou.
+
+var n1 = Number(window.prompt('Escolha um número de 1 a 10.'))          -> O 'Number()' vai converter o prompt de 'string' para 'number'. Vai pedir um número e salvar no data 'n1'.
+
+var n2 = Number(window.prompt('Escolha outro número de 11 a 20'))          -> O 'Number()' vai converter o prompt de 'string' para 'number'. Vai pedir um número e salvar no data 'n1'.
+
+var s = n1 + n2          -> Vai somar o n1 + n2. Isso pq o prompt foi convertido em 'number' se não ao invés de salvar o resultado da soma em 's' iria salvar 'n1n2'.
+
+window.alert(`A soma dos números escolhidos é ${s}`)          -> Vai emitir um alerta indicando o resultado da soma.
+
+var nome = window.prompt('Qual é o seu nome ?')          -> Vai perguntar o nome e salvar no data 'nome'.
+
+document.write(`O seu nome tem ${nome.length} letras, <strong>${nome}</strong>.<br/>`)          -> Vai escrever no documento. `O seu nome tem ${nome.length}(essa função indica a quantidade de caracteres no string) letras,<strong>${nome}</strong>.<br/>`
+
+document.write(`${nome.toUpperCase()} espero que goste do site.<br/>`)          -> Vai escrever no documento. `${nome.toUpperCase()}(vai deixar o valor de 'nome' todo MAIÙSCULO.)`
+ 
+document.write(`Este site foi feito com muito carinho para você ${nome.toLowerCase()}.`)          -> Vai escrever no documento. `Este site foi feito com muito carinho para você ${nome.toLowerCase()}(vai deixar o valor de 'nome' todo minúsculo).`
+
++ é igual a concatenação ou adição. Vai depender se for number + number ou string + string.
+As opções são = Number(), = Number.parseInt()(números inteiros) ou = Number.paserFloat()(números reais).
+Para number para string só substituir o = Number() por = String().
+
+Para formatar uma string:
+ var s = 'JavaScript'
+'Eu estou estudando s' //Não faz interpolação
+'Eu estou estudando ' + s //Usa concatenação
+`Eu estou estudando ${s}` //Usa template string
+s.length //Quantos caracteres a string tem
+s.toUpperCase() //Tudo para maiúscula
+s.toLowerCase() //Tudo para minúscula
+
+Para formatar um number:
+var n1 = 1543.5
+n1.toFixed(2) //1543.50
+n1.toFixed(3).replace('.', ',') //1543,500
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) //R$1.543,50
+'' '' '' '''' '' '' '''' '' '' '''' '' '' '''' '' '' '': 'USD'}) //US$1.543,50
+'' '' '' '''' '' '' '''' '' '' '''' '' '' '''' '' '' '': 'EUR'}) //E$1.543,50
