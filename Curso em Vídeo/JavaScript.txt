@@ -35,12 +35,12 @@ window.confirm('Confirma se você é Vascão')          -> Este é o comando de 
 
 window.prompt('Escreva seu nome')          -> Este é o comando de pergunta para o cliente, vai abrir uma mensagem com uma pergunta. Ex: Escreva seu nome.
 
-Módulo B Aula 01 -
+Módulo B Aula 05 -
 
 Variáveis(forma de armazenar dados):
 
 = é igual a "recebe".
-
+   
 var n1 = 8 typeof n1 'number'
 
 var japa = "minimok" typeof japa 'string'
