@@ -91,3 +91,24 @@ n1.toFixed(3).replace('.', ',') //1543,500
 n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) //R$1.543,50
 '' '' '' '''' '' '' '''' '' '' '''' '' '' '''' '' '' '': 'USD'}) //US$1.543,50
 '' '' '' '''' '' '' '''' '' '' '''' '' '' '''' '' '' '': 'EUR'}) //E$1.543,50
+
+Capítulo C Aula 09 -
+
+Seletores de DOM:
+
+Por Marca- window.document.getElementsByTagName('h1')[0]
+Por Id- window.document.getElementById('nomeDaId')
+Por Name- window.document.getElementsByName('nameDoObjeto')[0]
+Por Classe- window.document.getElementsByClassName('nomeDaClass')[0]
+Por Seletor- window.document.querySelector('div#nomeDaID')
+
+var d = window.document.getElementById('msg')
+
+d.innerText = 'Estou aguardando'
+window.document.getElementById('msg).innerText = 'Estou aguardando'
+
+d.style.backgroundColor = 'blue'*/
+
+var d = window.document.getElementsByName('msg')[0]
+
+window.alert(d.innerText)
