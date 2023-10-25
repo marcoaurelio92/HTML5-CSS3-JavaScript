@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex001/_imagens/favicon.ico" type="image/x-icon">
+    <title>Eventos DOM</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;}
+        
+        html, body{
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3em;}
+        body > div#area{
+            height: 300px;
+            width: 300px;
+            position: absolute;
+            display: flex;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(10, 162, 10);}
+    </style>
+</head>
+<body>
+    <div id="area" onmouseenter="entrar()" onclick="clicar()" onmouseout="sair()">
+        Interaja!
+    </div>
+    <script>
+        var a = window.document.getElementById('area')//o var fora da function pode ser usada por várias functions.
+        
+        /*a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)*/
+        function entrar(){
+            a.innerText = 'Entrou!'}
+        function clicar(){
+            a.innerText = 'Cliclou!'
+            a.style.backgroundColor = 'red'}
+        function sair(){
+            a.innerText = 'Saiu!'
+            a.style.backgroundColor = 'rgb(10, 162, 10)'}
+    </script>
+</body>
+</html>

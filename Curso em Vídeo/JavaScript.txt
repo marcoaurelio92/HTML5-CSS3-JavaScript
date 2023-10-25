@@ -112,3 +112,51 @@ d.style.backgroundColor = 'blue'*/
 var d = window.document.getElementsByName('msg')[0]
 
 window.alert(d.innerText)
+
+Capítulo C Aula 10 - 
+
+Eventos DOM (mouse):
+
+mouseenter- Mover o mouse pra cima de um objeto.
+mousemove- Mover o mouse por cima de um objeto.
+mousedown- Clicar e pressionar.
+mouseup- Pressionar e soltar.
+click- Clicar.
+mouseout- Mover o mouse pra fora do objeto.
+
+obs: Pra localizar erros em JS ir em DevTols.
+
+<div id="area" onmouseenter="entrar()" onclick="clicar()" onmouseout="sair()">
+     Interaja!
+</div>
+<script>
+        var a = window.document.getElementById('area')//o var fora da function pode ser usada por várias functions.
+        /*a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)*/
+        function entrar(){
+            a.innerText = 'Entrou!'}
+        function clicar(){
+            a.innerText = 'Cliclou!'
+            a.style.backgroundColor = 'red'}
+        function sair(){
+            a.innerText = 'Saiu!'
+            a.style.backgroundColor = 'rgb(10, 162, 10)'}
+</script>
+
+<h1>Somando Valores:</h1>
+<input type="number" name="txtn1" id="txtn1"> +
+<input type="number" name="txtn2" id="txtn2">
+<input type="button" value="Somar" onclick="somar()">
+<div id="res">
+     Resultado.
+</div>
+<script>
+     	function somar(){
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}`}
