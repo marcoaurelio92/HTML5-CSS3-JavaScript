@@ -160,3 +160,19 @@ obs: Pra localizar erros em JS ir em DevTols.
             var n2 = Number(tn2.value)
             var s = n1 + n2
             res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}`}
+
+Capítulo D Aula 11:
+
+Condições-
+function calcular(){
+        var txtve = window.document.querySelector('input#txtvel')
+        var res = window.document.querySelector('div#res')
+        var vel = Number(txtve.value)
+        res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}km/h.</strong></p>`
+        if(vel > 80){
+            res.innerHTML += `Você ultrapassou a velocidade máxima de 80km/h, você foi multado.`
+        } else{
+            res.innerHTML += `Você não possui multas pendentes.`
+        }
+        res.innerHTML += `<p>Use o cinto de segurança.</p>`
+        }
