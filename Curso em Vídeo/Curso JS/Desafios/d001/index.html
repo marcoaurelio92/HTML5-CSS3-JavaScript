@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../d001/_imagens/favicon.ico" type="image/x-icon">
+    <title>Condições JS</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        html{
+            height: 100vh;
+            width: 100vw;
+            background-color: #dddddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;}
+        main{
+            padding: 10px;
+            width: 500px;
+            height: 250px;
+            background-color: rgb(206, 93, 93);
+            font-family: Arial, Helvetica, sans-serif;}
+        main > h1{
+            text-align: center;
+            font-size: 1.6em;
+            background-color: #909090;
+            margin: -10px;
+            padding: 10px;}
+        main > form{
+            margin-top: 40px;}
+        form > label{
+            display: block;
+            margin-left: -10px;
+            padding: 10px;
+            width: 100%;
+            background-image: linear-gradient(to right, #909090 40%, transparent);
+            font-size: 1.2em;
+            text-indent: 50px;}
+        form > input#inacio{
+            display: block;
+            margin-top: 10px;
+            margin-left: 50px;
+            padding: 5px;}
+        form > input#enviar{
+            margin-left: 50px;
+            margin-top: 10px;
+            padding: 5px;}
+        form > output#res{
+            display: block;
+            margin-top: 5px;
+            margin-left: -10px;
+            padding: 10px;
+            width: 100%;
+            background-image: linear-gradient(to left, #909090 50%, transparent);
+            font-size: 1.2em;
+            text-indent: 70px;}
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Desafio lançado da aula 11 do módulo D.</h1>
+        <form action="país.php">
+            <label for="inacio">Seu país de origem:</label>
+                <input type="text" name="nacio" id="inacio" placeholder="Ex: Brasil">
+                <input id="enviar" type="button" value="Enviar">
+                <output name="resultado" id="res">Você é ... </output>
+        </form>
+    </main>
+    <script>
+        var p = window.document.querySelector('input#inacio')
+        var res = window.document.querySelector('output#res')
+        var enviar = window.document.querySelector('input#enviar')
+        enviar.addEventListener('click', clicar)
+        function clicar(){
+        if(p.value == "Brasil"){
+            res.innerHTML = `Você veio do país: ${p.value}. Você é Brasileiro`
+        } else{
+            res.innerHTML = `Você veio do país: ${p.value}. Você é estrangeiro.`
+        }
+        }
+    </script>
+</body>
+</html>
