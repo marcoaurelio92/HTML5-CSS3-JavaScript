@@ -176,3 +176,66 @@ function calcular(){
         }
         res.innerHTML += `<p>Use o cinto de segurança.</p>`
         }
+
+Capítulo D Aula 12:
+
+Condições aninhadas-
+
+var idade = 66
+console.log(`Você tem ${idade} anos.`)
+if(idade < 16){
+    console.log(`Não vota.`)
+} else if(idade < 18 || idade > 65){
+    console.log(`Voto opcional.`)
+} else{
+    console.log(`Voto obrigatório.`)
+}
+
+var hora = new Date()
+agora = hora.getHours()
+if(agora < 12){
+    console.log(`São ${agora} horas. Bom dia!`)
+}else if(agora > 18){
+    console.log(`São ${agora} horas. Boa noite!`)
+}else{
+    console.log(`São ${agora} horas. Boa tarde!`)
+} 
+
+Condição múltipla-
+
+var agora = new Date()
+var dia = agora.getDay()
+/*
+0 - Domingo
+1 - Segunda
+2 - Terça
+3 - Quarta
+4 - Quinta
+5 - Sexta
+6 - Sábado
+*/
+switch(dia){
+    case 0:
+        console.log(`Hoje é Domingo.`)
+        break
+    case 1:
+        console.log(`Hoje é Segunda-feira.`)
+        break
+    case 2:
+        console.log(`Hoje é Terça-feira.`)
+        break
+    case 3:
+        console.log(`Hoje é Quarta-feira.`)
+        break
+    case 4:
+        console.log(`Hoje é Quinta-feira.`)
+        break
+    case 5:
+        console.log(`Hoje é Sexta-feira.`)
+        break
+    case 6:
+        console.log(`Hoje é Sábado.`)
+        break
+    default:
+        console.log(`[ERRO] Dia inválido.`)
+}
