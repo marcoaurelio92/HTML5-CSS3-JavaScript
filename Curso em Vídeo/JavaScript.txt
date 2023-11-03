@@ -239,3 +239,10 @@ switch(dia){
     default:
         console.log(`[ERRO] Dia inválido.`)
 }
+
+Exercícios JavaScript Part02:
+
+// Para carregar uma function ao carregar uma página caso o script esteja em arquivo separado do html.
+<body onload="carregar()"> // Colocar o nome da function no onload.
+
+img.src = '_imagens/bomdia.png'         -> Carrega uma imagem com JS.
