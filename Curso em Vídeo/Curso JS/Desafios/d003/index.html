@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../d001/_imagens/favicon.ico" type="image/x-icon">
+    <title>Exercício Part.03</title>
+    <link rel="stylesheet" href="_estilo/style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade.</h1>
+    </header>
+    <section>
+        <div id="form">
+            <form action="verificador-idade.php">
+                <p>
+                    <label for="nasc">Ano de nascimento:</label>
+                        <input type="number" name="nasc" id="inasc">
+                </p>
+                <p>
+                    <label for="sex">Sexo:</label>
+                        <input type="radio" name="radsex" id="radm" checked> <label for="radm">Masculino</label> <input type="radio" name="radsex" id="radf"> <label for="radf">Feminino</label>
+                </p>
+                <input id="botao" type="button" value="Verificar" onclick="verificar()">
+            </form>
+        </div>
+        <div id="out">
+            Preencha os campos acima para verificar a idade!
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+    <script src="_script/script.js"></script>
+</body>
+</html>
