@@ -299,3 +299,20 @@ function verificar(){
         res.appendChild(img)
     }
 }
+
+Capítulo E Aula 13:
+
+Repetições-
+
+var t = 1
+while(t <= 10){
+	console.log(`${t} Tudo bem?`)
+	t++
+}          -> Aqui testa primeiro e depois executa o bloco.
+
+ou
+
+do{
+    console.log(`${t} Tudo bem?`)
+    t++
+} while(t <= 31)          -> Aqui executa o bloco e testa depois.
