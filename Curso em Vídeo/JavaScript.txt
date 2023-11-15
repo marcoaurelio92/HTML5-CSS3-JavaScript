@@ -316,3 +316,14 @@ do{
     console.log(`${t} Tudo bem?`)
     t++
 } while(t <= 31)          -> Aqui executa o bloco e testa depois.
+
+Capítulo E Aula 14:
+
+Repetições(Part02)-
+
+/* var c = 1                |     for(var c=1; c<=30; c++){
+                            |     console.log(`${c}`)
+while(c <= 10){             |	  }
+    console.log(`${c}`)     |
+    c++                     |
+} */                        |
