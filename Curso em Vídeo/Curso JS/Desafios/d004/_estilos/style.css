@@ -1,0 +1,39 @@
+@charset "UTF-9";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(50, 112, 255);
+}
+body > header > h1{
+    padding-top: 30px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.401);
+    text-align: center;
+}
+body > section{
+    margin: auto;
+    margin-top: 20px;
+    padding: 15px;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.504);
+    background-color: white;
+}
+div#dados > form > p{
+    margin-bottom: 10px;
+}
+div#res{
+    margin-top: 10px;
+}
+body > footer{
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.401);
+}
