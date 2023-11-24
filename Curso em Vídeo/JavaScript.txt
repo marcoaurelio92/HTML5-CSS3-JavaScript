@@ -418,3 +418,74 @@ if(poss == -1){
 } else{
 console.log(`O valor está na posição ${poss}`)
 }
+
+Capítulo F Aula 16:
+
+Funções em JS-
+
+OBS: Script completo. Par ou ímpar.
+function parimp(n){
+    if(n%2==0){
+        return 'Par!'
+    } else{
+        return 'Ímpar!'
+    }
+}
+console.log(parimp(223))
+
+OBS: Script completo. Soma.
+/*
+function soma(n1, n2){
+    return n1+n2
+}
+console.log(soma(15, 19))
+*/
+
+function soma(n1=0, n2=0){
+    return n1+n2
+}
+console.log(soma(7))
+
+OBS: Script completo. Dobro.
+var dobro = function dob(x){
+    return x*2
+}
+console.log(dobro(9))
+
+OBS: Script completo. Fatorial.
+// Tradicional
+/*
+Fatorial:
+5! = 5 x 4 x 3 x 2 x 1
+*/
+
+function fatorial(n){
+    var fat = 1
+    for(var c=n; c > 1; c--){
+        fat *= c
+    }
+    return fat
+}
+
+
+console.log(fatorial(9))
+
+OBS: Script completo. Fatorial.
+// Recursividade
+/*
+ 5! = 5 x 4 x 3 x 2 x 1
+ 5! = 5 x 4!
+
+ n! = n x (n-1)!
+ 1! = 1
+ */
+
+ function fatorial(n){
+    if(n == 1){
+        return 1
+    } else{
+        return n*fatorial(n-1)
+    }
+ }
+
+ console.log(fatorial(5))
