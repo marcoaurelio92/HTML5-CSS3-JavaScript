@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    width: 100vw;
+    background-color: rgb(31, 169, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+body > header > h1{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1.8em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.207);
+}
+body > section{
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.496);
+}
+input.but{
+    width: 100px;
+}
+div#form select#ilista{
+    margin-top: 10px;
+    width: 150px;
+    display: block;
+}
+body > section > div#res{
+    margin-top: 10px;
+}
+div#res p{
+    line-height: 30px;
+}
+body > footer{
+    margin-top: 20px;
+}
+body > footer > p{
+    text-align: center;
+    font-size: 0.8em;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.207);
+}
